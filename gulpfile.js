@@ -2,18 +2,20 @@
 
 var gulp = require('gulp');
 var pug = require('gulp-pug');
-var autoprefixer = require("autoprefixer");
 var browserSync = require("browser-sync").create();
-var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var sass = require('gulp-sass');
+var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
-var rename = require("gulp-rename");
-var del = require("del");
-var svgstore = require("gulp-svgstore");
 var sourcemap = require("gulp-sourcemaps");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+var del = require("del");
+
 
 gulp.task("clean", function () {
   return del("build")
@@ -62,6 +64,7 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icons/*.svg")
+    .pipe(svgmin())
     .pipe(svgstore({
       inlineSVG: true
     }))

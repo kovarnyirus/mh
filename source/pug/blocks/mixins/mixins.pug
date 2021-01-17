@@ -1,0 +1,9 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+		svg(class="icon icon-" + name + ' ' + mod)
+			use(xlink:href="img/icons/sprite.svg#" + name)
+
+mixin img(mobSrc, descSrc, className)
+	picture
+		source(media="(min-width: 960px)" srcset='img/' + descSrc )
+		+e.IMG.img(src='img/' + mobSrc class= className alt='img')

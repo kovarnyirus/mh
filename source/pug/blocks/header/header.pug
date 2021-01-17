@@ -1,0 +1,17 @@
+mixin header()
+	// start header
+	+b.HEADER.header
+		.container
+			+e.wrapper
+				+e.BUTTON.nav-toggle
+					span
+				+e.logo-wrapper
+					+e.IMG.logo(src='img/header-logo.svg' width='90' alt='logo')
+				+e.digital Digital-агентство MarketingHouse
+				+e.callback-wrapper
+					+icon('phone')
+					+e.A.callback-link(href='tel:+77771234567') +7 777 123 45 67
+				+e.A.consultation.atchor 	консультация маркетолога
+
+
+	// end header

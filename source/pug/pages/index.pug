@@ -1,7 +1,39 @@
 extends layout/main
+include ../blocks/mixins/mixins
+include ../blocks/header/header
+include ../blocks/main-nav/main-nav
+include ../blocks/action/action
+include ../blocks/stock-row/stock-row
+include ../blocks/write/write
+include ../blocks/problem/problem
+include ../blocks/former/former
+include ../blocks/member/member
+include ../blocks/projects/projects
+include ../blocks/tools/tools
+include ../blocks/workflow/workflow
+include ../blocks/team/team
+include ../blocks/footer/footer
+
+
+
 block title
-	title Grand Prix
+	title mh
 block pagecontent
-	.container
-		+b.header
-			+e.wrapper sad
+	+header()
+	+action()
+	+stock-row()
+	+write-1()
+	+problem()
+	+write-2()
+	+former()
+	+member-1()
+	+projects()
+	+write-3()
+	+member-2()
+	+tools
+	+member-3()
+	+workflow()
+	+former()
+	+write-3()
+	+team()
+	+footer()

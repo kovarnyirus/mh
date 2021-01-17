@@ -1,0 +1,22 @@
+mixin tools-item(img, title, description)
+	+e.item()
+		+e.img-wrapper
+			+e.img(src='img/tools/' + img alt='img')
+		+e.H3.item-title= title
+		+e.P.item-description= description
+		+e.A.item-link.btn(href="#") Получить подробную презентацию в WhatsApp
+
+mixin tools()
+	// start tools
+	+b.SECTION.tools
+		.container
+			+e.list
+				+tools-item('img', 'Контекстная реклама в Яндекс.Директ и Google.Ads', 'Клиенты в ваш бизнес из поисковых и медийный сетей, которые интересуются вашими товарами/услугами.')
+				+tools-item('img', 'Разработка Landing Page', 'Сайт, который продаёт за вас')
+				+tools-item('img', 'Таргетированная реклама Instagram/Facebook/Вконтакте', 'Поток целевых клиентов из социальным сетей под ключ')
+				+tools-item('img', 'Quiz-маркетинг в WhatsApp', 'Целевой лид от 30 руб в любую нишу')
+				+tools-item('img', 'Quiz-маркетинг', 'Привлечём, сегментируем, продадим')
+				+tools-item('img', 'Автоворонка в Вконтакте', 'Генерация базы горячих клиeнтов, которая будет постоянно покупать')
+				+tools-item('img', 'Введение соц сетей Вконтакте, Instagram', 'Привлечём, сегментируем, продадим')
+
+	// end tools

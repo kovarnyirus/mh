@@ -1,0 +1,37 @@
+mixin projectItem(className, logo, title, task, strategyArr, bg, bgTitle, resultText)
+	+e.item(class= className)
+		+e.logo-wrapper
+			+e.IMG.logo(src='img/' + logo alt='logo' )
+			+e.H3.title= title
+			+e.task
+				+e.task-title Задачи:
+				+e.P.task-text= task
+			+e.strategy
+				+e.H5.strategy-title Стратегия для проекта:
+				+e.UL.strategy-items
+					each strategyItem in strategyArr
+						+e.LI.strategy-item= strategyItem
+				+e.prewiew(style='background-image:url(img/'+ bg + ')')
+					+e.H5.prewiew-title= bgTitle
+					+e.prewiew-subtitle Горячие клиенты от MarketingHouse
+					+e.A.prevue-link(href='#')
+						+icon('lightning')
+						|   Читать
+			+e.result
+				+e.H5.result-tite Результат работы над проектом:
+				+e.tesult-text= resultText
+
+mixin projects()
+	// start projects
+	+b.SECTION.projects
+		.container
+			+e.list
+
+				+projectItem('wonderlandiya', 'wonderlandiya/wonderlandiya-logo.png', 'Производство и продажа детской одежды оптом Wonderlandiya', 'Увеличить посещение сайта и количество продаж через интернет-магазин', ['Запустить рекламные кампании в поисковых и медийных сетях.', 'Запустить рекламные кампании в социальных сетях Facebook и Instagram.'], 'wonderlandiya/bg.jpg', 'Кейс “Интернет-магазин wonderlandiya.ru”', 'Увеличение целевого трафика на 70%, увеличение продаж на 34%')
+				+projectItem('grandPrix', 'grandPrix/logo.png', 'Производство и продажа кормов супер-премиум класса Grand Prix', 'Повысить узнаваемость бренда, увеличить оптовые продажи', ['Запустить информационную рекламную кампанию в Instagram на автоворонку в WhatsApp', 'Упаковать landing page под оптовое направление и запустить рекламные кампании в поисковых и медийных сетях' ], 'grandPrix/bg.jpg', 'Кейс Grand Prix', '344 заявки под оптовое направление с ценой за 1 заявку = 280 руб')
+				+projectItem('robots', 'robots/logo.png', 'Интерактивная выставка роботов "Робосфера"', 'Повысить посещаемость выставки', ['Запустить автоворонку в Вконтакте и WhatsApp, которая прогревает аудиторию актуальным контентом (фото, видео с выставки) и закрывает на посещение', 'Запустить рекламу на YouTube, что повысить узнаваемость выставки и сделать дополнительное касание с аудиторией'], 'robots/bg.jpg', 'Кейс "Робосфера"', '7900 проданных билетов на выставку за 1 месяц, на 52% увеличили посещаемость выставки')
+				+projectItem('proSlide', 'proSlide/logo.svg', 'Обучение разработки презентаций PROSLIDES', 'Продажа платных курсов', ['Запустить продажу курсов через landing page'], 'proSlide/bg.jpg', 'Кейс PROSLIDES', 'Стоимость привлечения 1 лида на бесплатный урок = 35 руб. Конверсяи из бесплатного урока в покупка курса стоимость 9900 руб = 27%')
+				+projectItem('alexHammer', 'alexHammer/logo.png', 'Строительство каркасных домов axehammer-dom.ru', 'Привлечение на экскурсию по построенным объектам и генерация лидов на готовые проекты', ['Запустить запись на экскурсию через instagram на посадочную страницу', 'Запустить трафик на WhatsApp клиента с призывом получить коммерческое предложение на готовый проект'], 'alexHammer/bg.jpg', 'Кейс axehammer-dom.ru', '287 записей на экскурсию за 2 месяца, стоимость лида 190 руб. 89 Запросов коммерческих предложение в WhatsApp. Стоимость лида 97 руб.')
+
+
+	// end projects

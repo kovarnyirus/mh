@@ -16,42 +16,11 @@ const BLOCKS_DIR = path.join(__dirname, 'source/pug/blocks');
 const fileSources = {
   pug: `mixin {blockName}()
 	// start {blockName}
-	+b.{blockName}.section#{blockName}.lazy-background&attributes(attributes)
+	+b.SECTION.{blockName}
 		.container
-			+b.section-title.text-center
-				h2 {blockName}
-				
-			.row
+
 	// end {blockName}`,
   scss: `.{blockName} \{
-		&.visible{
-		
-		}
-	//
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-up(xs) {}
-	
-	//
-	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
-	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {} 
-
 }`
   ,
   // js	: `// .{blockName} scripts goes here`

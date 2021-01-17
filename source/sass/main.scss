@@ -1,8 +1,15 @@
 @import "bootstrap/mixins";
 @import "bootstrap/media";
 @import "bootstrap/bootstrap";
+@import "animate";
 @import "fonts";
 @import "vars";
 @import "media";
 @import "base";
+@import "../pug/blocks/mixins/mixins";
+@import "../pug/blocks/header/header";
+@import "../pug/blocks/action/action";
+@import "../pug/blocks/main-nav/main-nav";
+@import "../pug/blocks/stock-row/stock-row";
+@import "../pug/blocks/write/write";
 
