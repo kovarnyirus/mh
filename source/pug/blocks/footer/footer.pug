@@ -2,12 +2,13 @@ mixin footer()
 	// start footer
 	+b.FOOTRE.footer
 		.container
-			+e.logo-wrapper
-				+e.IMG.logo(src='img/footer-logo.svg' alt='logo' width='144')
-			+e.P.copyright  Digital-агентство MarketingHouse
-			+e.A.callback-link(href='tel:+77771234567')
-				+icon('phone')
-				| +7 777 123 45 67
-			+e.A.consultation-link(href='#' ) консультация маркетолога
+			+e.wrapper
+				+e.logo-wrapper
+					+e.IMG.logo(src='img/footer-logo.svg' alt='logo' width='144')
+				+e.P.copyright  Digital-агентство MarketingHouse
+				+e.A.callback-link(href='tel:+77771234567')
+					+icon('phone')
+					| +7 777 123 45 67
+				+e.A.consultation-link(href='#' ) консультация маркетолога
 
 	// end footer

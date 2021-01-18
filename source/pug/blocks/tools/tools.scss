@@ -1,2 +1,72 @@
 .tools {
+  &__item{
+    margin-bottom: 70px;
+    &--one{
+      .tools__img-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &--two{
+      .tools__img{
+        width: 279px;
+      }
+    }
+    &--three{
+      .tools__img{
+        width: 144px;
+      }
+    }
+    &--four{
+      .tools__img{
+        width: 220px;
+      }
+    }
+    &--five{
+      .tools__img{
+        width: 165px;
+      }
+    }
+    &--six{
+      .tools__img{
+        width: 220px;
+      }
+    }
+    &--seven{
+      .tools__img{
+        width: 125px;
+      }
+    }
+  }
+  &__img-wrapper{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item-title{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 18px;
+  }
+  &__item-description{
+    font-size: 12px;
+    line-height: 140%;
+    color: #F0F0F0;
+    margin-bottom: 18px;
+  }
+  &__item-link{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  //&--one{
+  //  .tools__img{
+  //    width: ;
+  //  }
+  //}
 }

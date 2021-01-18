@@ -33,7 +33,7 @@ mixin write-3(className)
 	- var params = {title: ' <span class="accent">  Не нашли</span>  подходящий кейс?', subtitle: 'Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp', img: 'form-decor-3.svg', classBlock: className}
 	+write-wrapper(params)
 		label.label
-			input.input.input--phone(type='text' placeholder='Введите номер телефона WhatsApp')
+			input.input.input--phone(type='text' placeholder='Номер телефона WhatsApp')
 		+e.BUTTON.send.btn.btn-send получить кейсы
 
 mixin write-4(className)
