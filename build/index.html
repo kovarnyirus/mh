@@ -101,8 +101,11 @@
           <h2 class="problem__title">Проблемы<span class="accent">  в вашем бизнесе</span>, которые решаем
           </h2>
           <div class="problem__list">
-            <div class="problem__item problem__item--img-right">
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/lead.svg" alt="img" title=""/>
+            <div class="problem__item problem__item--img-right problem__item problem__item--one">
+              <div class="problem__img-wrapper">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/problem/lead.svg"/><img class="problem__img" src="img/problem/lead.svg" alt="img" title=""/>
+                </picture>
               </div>
               <div class="problem__content-wrapper">
                 <h3 class="problem__item-title decor">Мало целевых лидов
@@ -127,8 +130,11 @@
                 </div>
               </div>
             </div>
-            <div class="problem__item">
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/cash-register.png" alt="img" title=""/>
+            <div class="problem__item problem__item--two">
+              <div class="problem__img-wrapper">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/problem/cash-register.png"/><img class="problem__img" src="img/problem/cash-register-mobile.png" alt="img" title=""/>
+                </picture>
               </div>
               <div class="problem__content-wrapper">
                 <h3 class="problem__item-title decor">Есть лиды, но низкая конверсия в продажу
@@ -153,8 +159,11 @@
                 </div>
               </div>
             </div>
-            <div class="problem__item problem__item--img-right">
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/cash.png" alt="img" title=""/>
+            <div class="problem__item problem__item--img-right problem__item problem__item--three">
+              <div class="problem__img-wrapper">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/problem/cash.png"/><img class="problem__img" src="img/problem/cash-mobile.png" alt="img" title=""/>
+                </picture>
               </div>
               <div class="problem__content-wrapper">
                 <h3 class="problem__item-title decor">Низкий процент повторных продаж
@@ -179,8 +188,11 @@
                 </div>
               </div>
             </div>
-            <div class="problem__item">
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/chart2.svg" alt="img" title=""/>
+            <div class="problem__item problem__item--four">
+              <div class="problem__img-wrapper">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/problem/chart2.svg"/><img class="problem__img" src="img/problem/chart2-mobile.svg" alt="img" title=""/>
+                </picture>
               </div>
               <div class="problem__content-wrapper">
                 <h3 class="problem__item-title decor">Всё хорошо, но не понимаете как масштабироваться
@@ -210,7 +222,7 @@
       </section>
       <!-- end problem-->
       <!-- start write-->
-      <section class="write">
+      <section class="write write write--two">
         <div class="container">
           <div class="write__wrapper">
             <div class="write__top-wrapper">
@@ -222,13 +234,14 @@
             <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-2.svg" alt="" role="presentation"/>
             </div>
             <form class="write__form-wrapper">
-              <select>
-                <opation>Выпадающий список</opation>
+              <select class="select">
+                <option>Выпадающий список</option>
               </select>
               <label class="label">
                 <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
               </label>
-              <button class="btn btn-send">записаться на разбор</button>
+              <button class="write__send btn btn-send">записаться на разбор
+              </button>
               <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
               </div>
             </form>
@@ -238,7 +251,7 @@
       <!-- start former-->
       <section class="former">
         <div class="container">
-          <h2 class="former__title">Мне не важно, какие маркетологи у вас были до меня.
+          <h2 class="former__title">Мне<span class="accent"> не важно</span>, какие маркетологи у вас были до меня.
           </h2>
           <p class="former__subtitle">Вы после меня забудете их имена.
           </p>
@@ -481,7 +494,8 @@
               <label class="label">
                 <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
               </label>
-              <button class="btn btn-send">получить кейсы</button>
+              <button class="write__send btn btn-send">получить кейсы
+              </button>
               <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
               </div>
             </form>
@@ -572,7 +586,7 @@
       <!-- start former-->
       <section class="former">
         <div class="container">
-          <h2 class="former__title">Мне не важно, какие маркетологи у вас были до меня.
+          <h2 class="former__title">Мне<span class="accent"> не важно</span>, какие маркетологи у вас были до меня.
           </h2>
           <p class="former__subtitle">Вы после меня забудете их имена.
           </p>
@@ -621,7 +635,8 @@
               <label class="label">
                 <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
               </label>
-              <button class="btn btn-send">получить кейсы</button>
+              <button class="write__send btn btn-send">получить кейсы
+              </button>
               <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
               </div>
             </form>

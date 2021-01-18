@@ -23,22 +23,22 @@ mixin write-1(className)
 mixin write-2(className)
 	- var params = {title: 'Укажите с какой проблемой вы столкнулись в вашем бизнесе и <span class="accent">  получите список готовых решений  </span> в виде PDF-файлов.', subtitle: 'PDF отправим в Ваш WhatsApp', img: 'form-decor-2.svg', classBlock: className}
 	+write-wrapper(params)
-		select
-			opation Выпадающий список
+		select.select
+			option Выпадающий список
 		label.label
 			input.input.input--phone(type='text' placeholder='Номер телефона WhatsApp')
-		button.btn.btn-send записаться на разбор
+		+e.BUTTON.send.btn.btn-send записаться на разбор
 
 mixin write-3(className)
 	- var params = {title: ' <span class="accent">  Не нашли</span>  подходящий кейс?', subtitle: 'Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp', img: 'form-decor-3.svg', classBlock: className}
 	+write-wrapper(params)
 		label.label
 			input.input.input--phone(type='text' placeholder='Введите номер телефона WhatsApp')
-		button.btn.btn-send получить кейсы
+		+e.BUTTON.send.btn.btn-send получить кейсы
 
 mixin write-4(className)
 	- var params = {title: 'В результате вы получите  <span class="accent">  маркетинговые инструменты, </span>  которые увеличат прибыль компании', img: 'form-decor-4.svg', classBlock: className}
 	+write-wrapper(params)
 		label.label
 			input.input.input--phone(type='text' placeholder='Введите номер телефона WhatsApp')
-		button.btn.btn-send Записаться на бесплатную консульацию
+		+e.BUTTON.send.btn.btn-send Записаться на бесплатную консульацию
