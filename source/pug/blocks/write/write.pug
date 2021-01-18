@@ -1,26 +1,27 @@
 mixin write-wrapper(params)
 	// start write
-	+b.SECTION.write
+	+b.SECTION.write(class= params.classBlock)
 		.container
-			+e.top-wrapper
-				+e.H2.title!= params.title
-				if params.subtitle
-					+e.subtitle!= params.subtitle
-			+e.img-wrapper
-				+e.IMG.img(src='img/' + params.img)
-			+e.FORM.form-wrapper
-				block
-				+e.agreement Нажимая на кнопку, вы даете согласие на обработку персональных данных
+			+e.wrapper
+				+e.top-wrapper
+					+e.H2.title!= params.title
+					if params.subtitle
+						+e.subtitle!= params.subtitle
+				+e.img-wrapper
+					+e.IMG.img(src='img/' + params.img)
+				+e.FORM.form-wrapper
+					block
+					+e.agreement Нажимая на кнопку, вы даете согласие на обработку персональных данных
 
-mixin write-1()
-	- var params = {title: 'Запишитесь на <span class="accent">  индивидуальный разбор,  </span>  чтобы увеличить продажи в вашем бизнесе', img: 'form-decor-1.svg' }
+mixin write-1(className)
+	- var params = {title: 'Запишитесь на <span class="accent">  индивидуальный разбор,  </span>  чтобы увеличить продажи в вашем бизнесе', img: 'form-decor-1.svg', classBlock: className }
 	+write-wrapper(params)
 		label.label
 			input.input.input--phone(type='text' placeholder='Номер телефона WhatsApp')
-		button.btn.btn-send записаться на разбор
+		+e.BUTTON.send.btn.btn-send записаться на разбор
 
-mixin write-2()
-	- var params = {title: 'Укажите с какой проблемой вы столкнулись в вашем бизнесе и <span class="accent">  получите список готовых решений  </span> в виде PDF-файлов.', subtitle: 'PDF отправим в Ваш WhatsApp', img: 'form-decor-2.svg'}
+mixin write-2(className)
+	- var params = {title: 'Укажите с какой проблемой вы столкнулись в вашем бизнесе и <span class="accent">  получите список готовых решений  </span> в виде PDF-файлов.', subtitle: 'PDF отправим в Ваш WhatsApp', img: 'form-decor-2.svg', classBlock: className}
 	+write-wrapper(params)
 		select
 			opation Выпадающий список
@@ -28,15 +29,15 @@ mixin write-2()
 			input.input.input--phone(type='text' placeholder='Номер телефона WhatsApp')
 		button.btn.btn-send записаться на разбор
 
-mixin write-3()
-	- var params = {title: ' <span class="accent">  Не нашли</span>  подходящий кейс?', subtitle: 'Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp', img: 'form-decor-3.svg'}
+mixin write-3(className)
+	- var params = {title: ' <span class="accent">  Не нашли</span>  подходящий кейс?', subtitle: 'Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp', img: 'form-decor-3.svg', classBlock: className}
 	+write-wrapper(params)
 		label.label
 			input.input.input--phone(type='text' placeholder='Введите номер телефона WhatsApp')
 		button.btn.btn-send получить кейсы
 
-mixin write-4()
-	- var params = {title: 'В результате вы получите  <span class="accent">  маркетинговые инструменты, </span>  которые увеличат прибыль компании', img: 'form-decor-4.svg'}
+mixin write-4(className)
+	- var params = {title: 'В результате вы получите  <span class="accent">  маркетинговые инструменты, </span>  которые увеличат прибыль компании', img: 'form-decor-4.svg', classBlock: className}
 	+write-wrapper(params)
 		label.label
 			input.input.input--phone(type='text' placeholder='Введите номер телефона WhatsApp')

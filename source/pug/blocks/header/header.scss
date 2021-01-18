@@ -1,30 +1,64 @@
 .header {
-		&.visible{
-		
-		}
-	//
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-up(xs) {}
-	
-	//
-	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
-	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {} 
-
+  margin-bottom: 35px;
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__logo-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__callback-link{
+    &:focus,
+    &:active{
+      outline: none;
+    }
+    span{
+      display: none;
+    }
+  }
+  &__consultation{
+    display: none;
+  }
+  &__nav-toggle{
+    width: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    height: 11px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    span{
+      background-color: white;
+      height: 1px;
+      display: block;
+      width: 100%;
+    }
+    &:before,
+    &:after{
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      left: 0;
+    }
+    &:before{
+      top: 0;
+    }
+    &:after{
+      bottom: 0;
+    }
+  }
+  &__digital{
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+    line-height: 10px;
+  }
 }

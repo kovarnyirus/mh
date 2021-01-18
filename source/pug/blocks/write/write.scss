@@ -1,2 +1,50 @@
 .write {
+  &__wrapper {
+    background-color: white;
+    color: #000000;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+    .accent {
+      color: black;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+
+  &__img-wrapper {
+    display: none;
+  }
+
+  &__send {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__agreement {
+    font-size: 10px;
+    line-height: 13px;
+    color: #797979;
+    text-align: center;
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &--one {
+    margin-bottom: 110px;
+  }
 }

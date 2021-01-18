@@ -1,2 +1,48 @@
 .action {
+  &__subtitle {
+    color: #242424;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 24px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  &__chart-wrapper {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 38px;
+  }
+
+  &__item {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $accent;
+      left: 0;
+      top: .5em;
+    }
+  }
 }

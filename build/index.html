@@ -22,13 +22,13 @@
             </button>
             <div class="header__logo-wrapper"><img class="header__logo" src="img/header-logo.svg" width="90" alt="logo" title=""/>
             </div>
-            <div class="header__digital">Digital-агентство MarketingHouse
-            </div>
-            <div class="header__callback-wrapper">
+            <div class="header__callback-wrapper"><a class="header__callback-link" href="tel:+77771234567">
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
-              </svg><a class="header__callback-link" href="tel:+77771234567">+7 777 123 45 67</a>
+              </svg><span>+7 777 123 45 67</span></a>
             </div><a class="header__consultation atchor">	консультация маркетолога</a>
+            <div class="header__digital">Digital-агентство MarketingHouse
+            </div>
           </div>
         </div>
       </header>
@@ -37,10 +37,12 @@
       <section class="action">
         <div class="container">
           <div class="action__left">
-            <h1 class="action__title">Увеличим <br>продажи<br> в бизнесе
+            <h1 class="action__title">Увеличим <br>продажи<br> в<span class="accent"> бизнесе</span>
             </h1>
             <p class="action__subtitle"> Индивидуальный разбор с маркетологом
             </p>
+            <div class="action__chart-wrapper"><img class="action__chart" src="img/chart1.svg" width="" alt="" role="presentation"/>
+            </div>
             <ul class="action__list">
               <li class="action__item">Разбор соц. сетей/сайта/посадочных/страниц/рекламы
               </li>
@@ -53,8 +55,6 @@
             </ul>
           </div>
           <div class="action__right">
-            <div class="action__chart-wrapper"><img class="action__chart" src="img/chart1.svg" width="" alt="" role="presentation"/>
-            </div>
           </div>
         </div>
       </section>
@@ -62,43 +62,50 @@
       <!-- start stock-row-->
       <section class="stock-row">
         <div class="container">
-          <h2 class="stock-row__title">Акция!
-          </h2>
-          <h2 class="stock-row__old-cost">3 000 ₽
-          </h2>
-          <h2 class="stock-row__new-cost">900 ₽
-          </h2>
+          <div class="stock-row__wrapper">
+            <h2 class="stock-row__title">Акция!
+            </h2>
+            <h2 class="stock-row__old-cost">3 000 ₽
+            </h2>
+            <h2 class="stock-row__new-cost">900 ₽
+            </h2>
+          </div>
         </div>
       </section>
       <!-- end stock-row-->
       <!-- start write-->
-      <section class="write">
+      <section class="write write write--one">
         <div class="container">
-          <div class="write__top-wrapper">
-            <h2 class="write__title">Запишитесь на <span class="accent">  индивидуальный разбор,  </span>  чтобы увеличить продажи в вашем бизнесе
-            </h2>
-          </div>
-          <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-1.svg" alt="" role="presentation"/>
-          </div>
-          <form class="write__form-wrapper">
-            <label class="label">
-              <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
-            </label>
-            <button class="btn btn-send">записаться на разбор</button>
-            <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+          <div class="write__wrapper">
+            <div class="write__top-wrapper">
+              <h2 class="write__title">Запишитесь на <span class="accent">  индивидуальный разбор,  </span>  чтобы увеличить продажи в вашем бизнесе
+              </h2>
             </div>
-          </form>
+            <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-1.svg" alt="" role="presentation"/>
+            </div>
+            <form class="write__form-wrapper">
+              <label class="label">
+                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+              </label>
+              <button class="write__send btn btn-send">записаться на разбор
+              </button>
+              <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <!-- start problem-->
       <section class="problem">
         <div class="container">
-          <h2 class="problem__title">Проблемы в вашем бизнесе,	которые решаем
+          <h2 class="problem__title">Проблемы<span class="accent">  в вашем бизнесе</span>, которые решаем
           </h2>
           <div class="problem__list">
             <div class="problem__item problem__item--img-right">
+              <div class="problem__img-wrapper"><img class="problem__img" src="img/lead.svg" alt="img" title=""/>
+              </div>
               <div class="problem__content-wrapper">
-                <h3 class="problem__title decor">Мало целевых лидов
+                <h3 class="problem__item-title decor">Мало целевых лидов
                 </h3>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -106,7 +113,8 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-1"></use>
                     </svg>
                   </div>
-                  <p class="description-text">В основном это возникает, когда вы не упаковываете должным образом свои товары или услуги, не делаете отстройку от конкурентов, не использует передовые технологии по привлечению клиентов.</p>
+                  <p class="problem__description-text">В основном это возникает, когда вы не упаковываете должным образом свои товары или услуги, не делаете отстройку от конкурентов, не использует передовые технологии по привлечению клиентов.
+                  </p>
                 </div>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -114,15 +122,16 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-2"></use>
                     </svg>
                   </div>
-                  <p class="description-text">Мы проведём анализ вас и ваших конкурентов, создадим смысловую упаковку вашего бизнеса, настроим рекламные кампании на увеличение продаж</p>
+                  <p class="problem__description-text">Мы проведём анализ вас и ваших конкурентов, создадим смысловую упаковку вашего бизнеса, настроим рекламные кампании на увеличение продаж
+                  </p>
                 </div>
-              </div>
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/lead.svg" alt="img" title=""/>
               </div>
             </div>
             <div class="problem__item">
+              <div class="problem__img-wrapper"><img class="problem__img" src="img/cash-register.png" alt="img" title=""/>
+              </div>
               <div class="problem__content-wrapper">
-                <h3 class="problem__title decor">Есть лиды, но низкая конверсия в продажу
+                <h3 class="problem__item-title decor">Есть лиды, но низкая конверсия в продажу
                 </h3>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -130,7 +139,8 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-1"></use>
                     </svg>
                   </div>
-                  <p class="description-text">Вы привлекаете много холодного трафика, который только поверхностно знает о вашем предложение и не видят конкурентного преимущества купить у вас</p>
+                  <p class="problem__description-text">Вы привлекаете много холодного трафика, который только поверхностно знает о вашем предложение и не видят конкурентного преимущества купить у вас
+                  </p>
                 </div>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -138,15 +148,16 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-2"></use>
                     </svg>
                   </div>
-                  <p class="description-text">Мало привлечь клиента нужно постоянно ему напоминать о себе. Для этого мы разработаем коммуникационную стратегию, которая за счёт ретаргетинговых кампаний делает дополнительные касания с клиентами и доводет их до покупки</p>
+                  <p class="problem__description-text">Мало привлечь клиента нужно постоянно ему напоминать о себе. Для этого мы разработаем коммуникационную стратегию, которая за счёт ретаргетинговых кампаний делает дополнительные касания с клиентами и доводет их до покупки
+                  </p>
                 </div>
-              </div>
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/cash-register.png" alt="img" title=""/>
               </div>
             </div>
             <div class="problem__item problem__item--img-right">
+              <div class="problem__img-wrapper"><img class="problem__img" src="img/cash.png" alt="img" title=""/>
+              </div>
               <div class="problem__content-wrapper">
-                <h3 class="problem__title decor">Низкий процент повторных продаж
+                <h3 class="problem__item-title decor">Низкий процент повторных продаж
                 </h3>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -154,7 +165,8 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-1"></use>
                     </svg>
                   </div>
-                  <p class="description-text">Не работаете с базой текущих клиентов, не прорабатываете продуктовую воронку</p>
+                  <p class="problem__description-text">Не работаете с базой текущих клиентов, не прорабатываете продуктовую воронку
+                  </p>
                 </div>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -162,15 +174,16 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-2"></use>
                     </svg>
                   </div>
-                  <p class="description-text">Создадим и реализуем стратегии повышение выручки с 1 клиента за счёт автоворонок продаж</p>
+                  <p class="problem__description-text">Создадим и реализуем стратегии повышение выручки с 1 клиента за счёт автоворонок продаж
+                  </p>
                 </div>
-              </div>
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/cash.png" alt="img" title=""/>
               </div>
             </div>
             <div class="problem__item">
+              <div class="problem__img-wrapper"><img class="problem__img" src="img/chart2.svg" alt="img" title=""/>
+              </div>
               <div class="problem__content-wrapper">
-                <h3 class="problem__title decor">Всё хорошо, но не понимаете как масштабироваться
+                <h3 class="problem__item-title decor">Всё хорошо, но не понимаете как масштабироваться
                 </h3>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -178,7 +191,8 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-1"></use>
                     </svg>
                   </div>
-                  <p class="description-text">Есть работающая маркетинговая стратегия, но при увеличение рекламного бюджета прибыль не растёт</p>
+                  <p class="problem__description-text">Есть работающая маркетинговая стратегия, но при увеличение рекламного бюджета прибыль не растёт
+                  </p>
                 </div>
                 <div class="problem__description">
                   <div class="problem__description-icon">
@@ -186,10 +200,9 @@
                       <use xlink:href="img/icons/sprite.svg#lide-decor-2"></use>
                     </svg>
                   </div>
-                  <p class="description-text">После анализа текущей ситуации. Мы подключим новые digital инструменты, которые позволят получать дополнительную прибыль</p>
+                  <p class="problem__description-text">После анализа текущей ситуации. Мы подключим новые digital инструменты, которые позволят получать дополнительную прибыль
+                  </p>
                 </div>
-              </div>
-              <div class="problem__img-wrapper"><img class="problem__img" src="img/chart2.svg" alt="img" title=""/>
               </div>
             </div>
           </div>
@@ -199,25 +212,27 @@
       <!-- start write-->
       <section class="write">
         <div class="container">
-          <div class="write__top-wrapper">
-            <h2 class="write__title">Укажите с какой проблемой вы столкнулись в вашем бизнесе и <span class="accent">  получите список готовых решений  </span> в виде PDF-файлов.
-            </h2>
-            <div class="write__subtitle">PDF отправим в Ваш WhatsApp
+          <div class="write__wrapper">
+            <div class="write__top-wrapper">
+              <h2 class="write__title">Укажите с какой проблемой вы столкнулись в вашем бизнесе и <span class="accent">  получите список готовых решений  </span> в виде PDF-файлов.
+              </h2>
+              <div class="write__subtitle">PDF отправим в Ваш WhatsApp
+              </div>
             </div>
-          </div>
-          <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-2.svg" alt="" role="presentation"/>
-          </div>
-          <form class="write__form-wrapper">
-            <select>
-              <opation>Выпадающий список</opation>
-            </select>
-            <label class="label">
-              <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
-            </label>
-            <button class="btn btn-send">записаться на разбор</button>
-            <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+            <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-2.svg" alt="" role="presentation"/>
             </div>
-          </form>
+            <form class="write__form-wrapper">
+              <select>
+                <opation>Выпадающий список</opation>
+              </select>
+              <label class="label">
+                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+              </label>
+              <button class="btn btn-send">записаться на разбор</button>
+              <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <!-- start former-->
@@ -453,22 +468,24 @@
       <!-- start write-->
       <section class="write">
         <div class="container">
-          <div class="write__top-wrapper">
-            <h2 class="write__title"> <span class="accent">  Не нашли</span>  подходящий кейс?
-            </h2>
-            <div class="write__subtitle">Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp
+          <div class="write__wrapper">
+            <div class="write__top-wrapper">
+              <h2 class="write__title"> <span class="accent">  Не нашли</span>  подходящий кейс?
+              </h2>
+              <div class="write__subtitle">Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp
+              </div>
             </div>
-          </div>
-          <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-3.svg" alt="" role="presentation"/>
-          </div>
-          <form class="write__form-wrapper">
-            <label class="label">
-              <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
-            </label>
-            <button class="btn btn-send">получить кейсы</button>
-            <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+            <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-3.svg" alt="" role="presentation"/>
             </div>
-          </form>
+            <form class="write__form-wrapper">
+              <label class="label">
+                <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
+              </label>
+              <button class="btn btn-send">получить кейсы</button>
+              <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <div class="member">
@@ -591,22 +608,24 @@
       <!-- start write-->
       <section class="write">
         <div class="container">
-          <div class="write__top-wrapper">
-            <h2 class="write__title"> <span class="accent">  Не нашли</span>  подходящий кейс?
-            </h2>
-            <div class="write__subtitle">Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp
+          <div class="write__wrapper">
+            <div class="write__top-wrapper">
+              <h2 class="write__title"> <span class="accent">  Не нашли</span>  подходящий кейс?
+              </h2>
+              <div class="write__subtitle">Получите подробно разобранный кейс-инструкцию в Вашей нише. Кейс отправим Вам в WhatsApp
+              </div>
             </div>
-          </div>
-          <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-3.svg" alt="" role="presentation"/>
-          </div>
-          <form class="write__form-wrapper">
-            <label class="label">
-              <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
-            </label>
-            <button class="btn btn-send">получить кейсы</button>
-            <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+            <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-3.svg" alt="" role="presentation"/>
             </div>
-          </form>
+            <form class="write__form-wrapper">
+              <label class="label">
+                <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
+              </label>
+              <button class="btn btn-send">получить кейсы</button>
+              <div class="write__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <!-- start team-->
