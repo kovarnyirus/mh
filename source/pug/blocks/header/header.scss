@@ -61,4 +61,52 @@
     font-size: 8px;
     line-height: 10px;
   }
+
+  @include media-breakpoint-up(lg){
+    padding-top: 17px;
+    &__nav-toggle{
+      margin-right: 35px;
+      order: 1;
+    }
+    &__logo-wrapper{
+      margin-left: 0;
+      order: 2;
+      margin-right: 61px;
+    }
+    &__logo{
+      width: 144px;
+    }
+    &__digital{
+      order: 3;
+      width: auto;
+      flex-grow: 1;
+      text-align: left;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__callback-wrapper{
+      order: 4;
+    }
+    &__consultation{
+      order: 5;
+      display: block;
+      padding: 18px 24px;
+      border-radius: 5px;
+      border: 1px solid #F07281;
+    }
+    &__callback-link{
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      span{
+        display: inline-block;
+        font-size: 26px;
+        line-height: 33px;
+        text-transform: uppercase;
+      }
+      .icon{
+        margin-right: 13px;
+      }
+    }
+  }
 }

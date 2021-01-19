@@ -21,6 +21,7 @@
 
   &__title{
     font-weight: normal;
+    text-transform: uppercase;
   }
 
   &__old-cost{
@@ -34,6 +35,19 @@
       left: 50%;
       transform: translateX(-50%) translateY(50%) rotate(171.45deg) ;
       background-color: #242424;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    margin-bottom: 120px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    &__title,
+    &__old-cost,
+    &__new-cost{
+      font-size: 70px;
+      line-height: 88px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }

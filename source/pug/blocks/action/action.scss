@@ -45,4 +45,48 @@
       top: .5em;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 66px;
+    .container {
+      position: relative;
+    }
+    &__left {
+      max-width: 45%;
+    }
+
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    &__subtitle {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #242424;
+      margin-bottom: 45px;
+    }
+
+    &__chart-wrapper {
+      position: absolute;
+      right: 20px;
+      max-width: 55%;
+      top: 15px;
+    }
+    &__list{
+      margin-bottom: 0;
+    }
+    &__item {
+      font-size: 18px;
+      line-height: 200%;
+      margin-bottom: 0;
+
+      &:before {
+        width: 9px;
+        height: 9px;
+        top: 14px;
+      }
+    }
+  }
 }

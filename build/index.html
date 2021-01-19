@@ -26,7 +26,7 @@
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
               </svg><span>+7 777 123 45 67</span></a>
-            </div><a class="header__consultation atchor">	консультация маркетолога</a>
+            </div><a class="header__consultation atchor" href="#">	консультация маркетолога</a>
             <div class="header__digital">Digital-агентство MarketingHouse
             </div>
           </div>
@@ -41,7 +41,10 @@
             </h1>
             <p class="action__subtitle"> Индивидуальный разбор с маркетологом
             </p>
-            <div class="action__chart-wrapper"><img class="action__chart" src="img/chart1.svg" width="" alt="" role="presentation"/>
+            <div class="action__chart-wrapper">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/chart1.svg"/><img class="action__img" src="img/chart1-mobile.svg" alt="img" title=""/>
+              </picture>
             </div>
             <ul class="action__list">
               <li class="action__item">Разбор соц. сетей/сайта/посадочных/страниц/рекламы
