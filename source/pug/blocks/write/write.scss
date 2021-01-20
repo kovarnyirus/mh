@@ -2,7 +2,9 @@
   background-color: white;
   color: #000000;
   margin-bottom: 43px;
-  &__wrapper{
+
+
+  &__wrapper {
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -19,7 +21,8 @@
       font-style: italic;
     }
   }
-  &__subtitle{
+
+  &__subtitle {
     font-size: 12px;
     line-height: 140%;
     margin-bottom: 47px;
@@ -50,16 +53,85 @@
   &--one {
     margin-bottom: 110px;
     background-color: transparent;
-    .write{
-      &__wrapper{
+
+    .write {
+      &__wrapper {
         background-color: white;
         color: #000000;
         border-radius: 20px;
         padding-left: 15px;
         padding-right: 15px;
       }
+
       &__title {
         font-size: 14px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+    margin-bottom: 144px;
+    &__wrapper {
+      background-color: white;
+      color: #000000;
+      border-radius: 20px;
+      padding-top: 52px;
+      padding-left: 70px;
+      padding-right: 40px;
+      padding-bottom: 58px;
+      position: relative;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 140%;
+      max-width: 574px;
+      margin-bottom: 21px;
+    }
+
+    &__form-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .label {
+      max-width: 298px;
+      margin-right: 8px;
+    }
+
+    &__send {
+      max-width: 298px;
+    }
+    &__agreement {
+      width: 100%;
+      text-align: left;
+      font-size: 12px;
+      line-height: 15px;
+      padding-left: 0;
+    }
+
+    &__img-wrapper {
+      display: block;
+      position: absolute;
+      right: 40px;
+      bottom: 13px;
+    }
+
+    &--one {
+      .write {
+        &__wrapper {
+          padding-top: 52px;
+          padding-left: 70px;
+          padding-right: 40px;
+          padding-bottom: 58px;
+        }
+
+        &__title {
+          font-size: 24px;
+          line-height: 140%;
+        }
       }
     }
   }

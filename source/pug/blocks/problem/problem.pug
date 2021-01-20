@@ -1,0 +1,34 @@
+mixin description(icon, text)
+	+e.description
+		+e.description-icon
+			+icon(icon)
+		+e.P.description-text= text
+
+mixin content-item(title, topText, bottomText, mobileSrc, imgSrc)
+	+e.img-wrapper
+		+img(mobileSrc, imgSrc)
+	+e.content-wrapper
+		+e.H3.item-title.decor= title
+		+description('lide-decor-1', topText )
+		+description('lide-decor-2', bottomText )
+
+
+
+mixin problem()
+	// start problem
+	+b.SECTION.problem
+		.container
+			+e.H2.title Проблемы
+				span.accent   в вашем бизнесе
+				|, которые решаем
+			+e.list
+				+e.item--img-right.problem__item--one
+					+content-item('Мало целевых лидов', 'В основном это возникает, когда вы не упаковываете должным образом свои товары или услуги, не делаете отстройку от конкурентов, не использует передовые технологии по привлечению клиентов.', 'Мы проведём анализ вас и ваших конкурентов, создадим смысловую упаковку вашего бизнеса, настроим рекламные кампании на увеличение продаж', 'problem/lead.svg', 'problem/lead.svg')
+				+e.item--two
+					+content-item('Есть лиды, но низкая конверсия в продажу', 'Вы привлекаете много холодного трафика, который только поверхностно знает о вашем предложение и не видят конкурентного преимущества купить у вас', 'Мало привлечь клиента нужно постоянно ему напоминать о себе. Для этого мы разработаем коммуникационную стратегию, которая за счёт ретаргетинговых кампаний делает дополнительные касания с клиентами и доводет их до покупки', 'problem/cash-register-mobile.png', 'problem/cash-register.png')
+				+e.item--img-right.problem__item--three
+					+content-item('Низкий процент повторных продаж', 'Не работаете с базой текущих клиентов, не прорабатываете продуктовую воронку', 'Создадим и реализуем стратегии повышение выручки с 1 клиента за счёт автоворонок продаж', 'problem/cash-mobile.png', 'problem/cash.png')
+				+e.item--four
+					+content-item('Всё хорошо, но не понимаете как масштабироваться', 'Есть работающая маркетинговая стратегия, но при увеличение рекламного бюджета прибыль не растёт', 'После анализа текущей ситуации. Мы подключим новые digital инструменты, которые позволят получать дополнительную прибыль', 'problem/chart2-mobile.svg', 'problem/chart2.svg')
+
+	// end problem

@@ -1,0 +1,71 @@
+.problem {
+  &__title {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 63px;
+  }
+
+  &__item {
+    margin-bottom: 85px;
+
+    &--one {
+      .problem__img {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--two {
+      .problem__img {
+        padding-left: 73px;
+        padding-right: 53px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &--three {
+      .problem__img {
+        padding-left: 43px;
+        padding-right: 43px;
+        margin-bottom: 24px;
+      }
+    }
+
+    &--four {
+      .problem__img {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__description-icon {
+    margin-right: 10px;
+  }
+
+  &__item-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 19px;
+  }
+
+  &__description-text {
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-breakpoint-up(lg){
+
+  }
+}
