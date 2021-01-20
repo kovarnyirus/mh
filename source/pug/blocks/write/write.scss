@@ -89,10 +89,17 @@
       max-width: 574px;
       margin-bottom: 21px;
     }
+    &__subtitle{
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 39px;
+    }
 
     &__form-wrapper {
       display: flex;
       flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
 
     }
 
@@ -100,10 +107,16 @@
       max-width: 298px;
       margin-right: 8px;
     }
+    .select{
+      max-width: 298px;
+      margin-right: 8px;
+      max-height: 74px;
+    }
 
     &__send {
       max-width: 298px;
     }
+
     &__agreement {
       width: 100%;
       text-align: left;
@@ -120,6 +133,7 @@
     }
 
     &--one {
+      margin-bottom: 105px;
       .write {
         &__wrapper {
           padding-top: 52px;
@@ -131,6 +145,14 @@
         &__title {
           font-size: 24px;
           line-height: 140%;
+        }
+      }
+    }
+    &--two{
+      .write {
+        &__img-wrapper{
+          z-index: 0;
+          bottom: 63px;
         }
       }
     }

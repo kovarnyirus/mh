@@ -11,14 +11,14 @@ mixin projectItem(className, logo, title, task, strategyArr, bgDesktop, bgMobile
 			+e.UL.strategy-items
 				each strategyItem in strategyArr
 					+e.LI.strategy-item= strategyItem
-			+e.prewiew
-				+img(bgMobile, bgDesktop)
-				+e.content-wrapper
-					+e.H5.prewiew-title= bgTitle
-					+e.prewiew-subtitle Горячие клиенты от MarketingHouse
-					+e.A.prewiew-link(href='#')
-						+icon('lightning')
-						|   Читать
+		+e.prewiew
+			+img(bgMobile, bgDesktop)
+			+e.content-wrapper
+				+e.H5.prewiew-title= bgTitle
+				+e.prewiew-subtitle Горячие клиенты от MarketingHouse
+				+e.A.prewiew-link(href='#')
+					+icon('lightning')
+					|   Читать
 		+e.result
 			+e.H5.result-tite Результат работы над проектом:
 			+e.result-text= resultText

@@ -149,30 +149,159 @@
     line-height: 140%;
   }
 
-  &--wonderlandiya{
-    .projects__logo-wrapper{
+  &--wonderlandiya {
+    .projects__logo-wrapper {
       width: 72px;
     }
   }
 
-  &--grandPrix{
-    .projects__logo-wrapper{
+  &--grandPrix {
+    .projects__logo-wrapper {
       width: 64px;
     }
   }
-  &--robots{
-    .projects__logo-wrapper{
+
+  &--robots {
+    .projects__logo-wrapper {
       width: 77px;
     }
   }
-  &--proSlide{
-    .projects__logo-wrapper{
+
+  &--proSlide {
+    .projects__logo-wrapper {
       width: 128px;
     }
   }
-  &--alexHammer{
-    .projects__logo-wrapper{
+
+  &--alexHammer {
+    .projects__logo-wrapper {
       width: 116px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 163px;
+    &__item {
+      max-width: 790px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 126px;
+    }
+
+    &__logo-wrapper {
+      margin-bottom: 36px;
+    }
+
+    &__title {
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 130%;
+      margin-bottom: 30px;
+    }
+
+    &__task-title {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 10px;
+    }
+
+    &__task-text {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 30px;
+    }
+
+    &__strategy {
+      margin-bottom: 30px;
+    }
+
+    &__strategy-title {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 10px;
+    }
+
+    &__strategy-item {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 8px;
+      padding-left: 23px;
+
+      &:before {
+        width: 7px;
+        height: 7px;
+      }
+    }
+    &__prewiew {
+      margin-bottom: 30px;
+    }
+
+    &__prewiew-title {
+      font-size: 28px;
+      line-height: 130%;
+      max-width: 362px;
+      margin-bottom: 13px;
+    }
+
+    &__prewiew-subtitle {
+      font-size: 18px;
+      line-height: 130%;
+      margin-bottom: 17px;
+    }
+
+    &__prewiew-link {
+      height: 44px;
+      width: 130px;
+      font-size: 18px;
+      line-height: 130%;
+
+      .icon {
+        width: 14px;
+        height: 18px;
+        margin-right: 7px;
+      }
+    }
+
+    &__result-tite {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 10px;
+    }
+
+    &__result-text {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    &--wonderlandiya {
+      .projects__logo-wrapper {
+        width: 72px;
+      }
+    }
+
+    &--grandPrix {
+      .projects__logo-wrapper {
+        width: 135px;
+      }
+    }
+
+    &--robots {
+      .projects__logo-wrapper {
+        width: 90px;
+      }
+    }
+
+    &--proSlide {
+      .projects__logo-wrapper {
+        width: 335px;
+      }
+    }
+
+    &--alexHammer {
+      .projects__logo-wrapper {
+        width: 234px;
+      }
     }
   }
 }

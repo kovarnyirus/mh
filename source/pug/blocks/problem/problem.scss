@@ -65,7 +65,130 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @include media-breakpoint-up(lg){
 
+  @include media-breakpoint-up(lg) {
+    &__title {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 130%;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 69px;
+    }
+
+    &__content-wrapper {
+      max-width: 50%;
+      position: relative;
+    }
+
+    .decor {
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 90px;
+        height: 1px;
+        background-color: white;
+        left: -121px;
+        top: .75em;
+      }
+
+    }
+
+    &__item {
+      display: flex;
+
+      &--img-right {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        .decor {
+          &:before{
+            left: auto;
+            right: 31px;
+          }
+        }
+      }
+
+      &--one {
+        margin-bottom: 100px;
+        .problem__img {
+          margin-bottom: 0;
+          width: 535px;
+          margin-top: 80px;
+        }
+        .problem__item-title{
+          max-width: 418px;
+        }
+      }
+
+      &--two {
+        margin-bottom: 12px;
+        .problem__img {
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom:0;
+          max-width: 541px;
+          margin-left: 0;
+          margin-top: -25px;
+        }
+      }
+
+      &--three {
+        margin-bottom: 78px;
+        .problem__img {
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 0;
+          max-width: 519px;
+          margin-top: -35px;
+        }
+
+        .problem__item-title{
+          max-width: 503px;
+        }
+
+      }
+
+      &--four {
+        margin-bottom: 100px;
+        .problem__img {
+          max-width: 450px;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__img-wrapper {
+      width: 50%;
+    }
+
+
+
+    &__item-title {
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 130%;
+      text-align: left;
+      margin-bottom: 65px;
+    }
+
+    &__description {
+      margin-bottom: 35px;
+    }
+
+    &__description-text {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    &__description-icon {
+      .icon {
+        width: 35px;
+        height: 65px;
+        margin-right: 25px;
+      }
+    }
   }
 }
