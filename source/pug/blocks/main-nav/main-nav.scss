@@ -69,7 +69,11 @@
       opacity: .6;
     }
   }
-  &__link{
-
+  @include media-breakpoint-up(lg){
+    &__item{
+      font-size: 60px;
+      line-height: 97.6%;
+      margin-bottom: 40px;
+    }
   }
 }
