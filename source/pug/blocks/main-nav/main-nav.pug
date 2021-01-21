@@ -1,6 +1,20 @@
 mixin main-nav()
 	// start main-nav
-	+b.main-nav
+	+b.NAV.main-nav
 		.container
+			+e.BUTTON.close
+			+e.UL.list
+				+e.LI.item
+					+e.A.link(href='#') главная
+				+e.LI.item
+					+e.A.link(href='#') Проблемы
+				+e.LI.item
+					+e.A.link(href='#') кейсы
+				+e.LI.item
+					+e.A.link(href='#') решения
+				+e.LI.item
+					+e.A.link(href='#') индивидуальное <br>предложение
+
+
 
 	// end main-nav

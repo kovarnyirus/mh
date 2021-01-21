@@ -15,4 +15,20 @@
     margin-left: -20px;
     margin-right: -20px;
   }
+  @include media-breakpoint-up(lg){
+    margin-bottom: 0;
+    &__link{
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -15px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    &__img-wrapper{
+      max-width: 1005px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

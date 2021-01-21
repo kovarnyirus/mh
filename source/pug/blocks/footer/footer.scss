@@ -63,4 +63,37 @@
     }
   }
 
+  @include media-breakpoint-up(lg){
+    background-color: #1C2125;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    &__wrapper{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+     padding: 0;
+    }
+    &__logo-wrapper{
+      width: 144px;
+      margin-right: 61px;
+      margin-bottom: 0;
+    }
+
+    &__logo{
+      margin-bottom: 0;
+    }
+
+    &__copyright{
+      flex-grow: 1;
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__callback-link{
+      font-size: 26px;
+      line-height: 33px;
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
 }

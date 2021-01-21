@@ -82,6 +82,11 @@
       padding-bottom: 58px;
       position: relative;
     }
+    &__top-wrapper{
+      max-width: 604px;
+      position: relative;
+      z-index: 2;
+    }
 
     &__title {
       font-size: 24px;
@@ -154,6 +159,41 @@
           z-index: 0;
           bottom: 63px;
         }
+      }
+    }
+    &--three{
+      margin-bottom: 109px;
+      .write {
+        &__img-wrapper{
+          z-index: 0;
+          bottom: 17px;
+          right: 32px;
+          max-width: 471px;
+        }
+      }
+      .label{
+        max-width: 367px;
+      }
+    }
+    &--four{
+      margin-bottom: 136px;
+      .write {
+        &__top-wrapper{
+          max-width: 650px;
+        }
+        &__title{
+          width: 100%;
+          max-width: 650px;
+        }
+        &__img-wrapper{
+          z-index: 0;
+          bottom: 41px;
+          right: -56px;
+          max-width: 572px;
+        }
+      }
+      .label{
+        max-width: 367px;
       }
     }
   }

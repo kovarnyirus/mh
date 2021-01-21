@@ -7,4 +7,21 @@
     text-align: center;
     margin-bottom: 43px;
   }
+  @include media-breakpoint-up(lg){
+    margin-bottom: 140px;
+    &__title{
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 130%;
+      margin-bottom: 92px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__img-wrapper{
+      max-width: 790px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

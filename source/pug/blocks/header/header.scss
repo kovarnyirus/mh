@@ -10,6 +10,12 @@
     margin-right: auto;
   }
   &__callback-link{
+    &:hover{
+     opacity: .8;
+    }
+    &:active{
+      opacity: .6;
+    }
     &:focus,
     &:active{
       outline: none;
@@ -20,6 +26,18 @@
   }
   &__consultation{
     display: none;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    &:hover{
+      background: #F07281;
+      border-color: #F07281;
+    }
+    &:active{
+      background: #CC4555;;
+      border-color: #CC4555;;
+    }
   }
   &__nav-toggle{
     width: 25px;
