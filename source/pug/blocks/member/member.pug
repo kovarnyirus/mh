@@ -1,12 +1,54 @@
-
-
-
 mixin member-1()
-	+b.SECTION.member
+	+b.SECTION.member--one
 		.container
+			+e.wrapper
+				+e.title-wrapper
+					+e.H2.title  Решаем<br>
+						span.accent  задачи бизнеса
+						|   на реальных проектах
+				+e.member-info-wrapper
+					+e.msg-wrapper
+						+img('members/anton-decor-mobile.svg', 'members/anton-decor.svg')
+					+img('members/anton-mobile.png', 'members/anton.png')
+					+e.member-info
+						+e.name Антон Смирнов
+						+e.post Руководитель отдела маркетинга
+
 
 mixin member-2()
-	+b.member
+	+b.SECTION.member--two
+		.container
+			+e.wrapper
+				+e.title-wrapper
+					+e.H2.title  Готовые<br>
+						span.accent  маркетинг- решения
+						|     для вашего бизнеса
+				+e.member-info-wrapper
+					+e.msg-wrapper
+						+img('members/alex-decor-mobile.svg', 'members/alex-decor.svg')
+					+img('members/alex-mobile.png', 'members/alex.png')
+					+e.member-info
+						+e.name Александр Тышкевич
+						+e.post Руководитель отдела продаж
 
 mixin member-3()
-	+b.member
+	+b.SECTION.member--three
+		.container
+			+e.title-wrapper
+				+e.H2.title  Хотите получить<br>
+					span.accent  индивидуальное предложение
+					|     под ваш проект?
+			+e.wrapper
+				+e.member-info-wrapper
+					+e.msg-wrapper
+						+img('members/varvara-decor-mobile.svg', 'members/varvara-decor.svg')
+					+img('members/varvara-mobile.png', 'members/varvara.png')
+					+e.member-info
+						+e.name Варвара Штенникова
+						+e.post Руководитель отдела управления проектами
+				+e.right-col
+					+e.IMG.decor-img(src='img/members/rdb.png' width='227')
+					+e.P.offer  Пройдите простой тест и мы подготовим стратегию под конкретно ваш случай и пришлём pdf  "Построение RDB модели для эффективной рекламы"
+					+e.A.start-test.btn(href='#')
+						span НАЧАТЬ ТЕСТ
+						img.adobe-icon(src='img/adobe.png')
