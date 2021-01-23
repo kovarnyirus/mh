@@ -1,6 +1,7 @@
 @import "bootstrap/mixins";
 @import "bootstrap/media";
 @import "bootstrap/bootstrap";
+@import "magnific-popup";
 @import "animate";
 @import "fonts";
 @import "vars";
@@ -20,4 +21,5 @@
 @import "../pug/blocks/team/team";
 @import "../pug/blocks/member/member";
 @import "../pug/blocks/footer/footer";
+@import "../pug/blocks/quiz/quiz";
 

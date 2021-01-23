@@ -20,22 +20,22 @@
           <button class="main-nav__close">
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">главная</a>
+            <li class="main-nav__item"><a class="main-nav__link animate-scroll" href="#top">главная</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Проблемы</a>
+            <li class="main-nav__item"><a class="main-nav__link animate-scroll" href="#problem">Проблемы</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">кейсы</a>
+            <li class="main-nav__item"><a class="main-nav__link animate-scroll" href="#projects">кейсы</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">решения</a>
+            <li class="main-nav__item"><a class="main-nav__link animate-scroll" href="#tools">решения</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">индивидуальное <br>предложение</a>
+            <li class="main-nav__item"><a class="main-nav__link animate-scroll" href="#suggestion">индивидуальное <br>предложение</a>
             </li>
           </ul>
         </div>
       </nav>
       <!-- end main-nav-->
       <!-- start header-->
-      <header class="header">
+      <header class="header" id="top">
         <div class="container">
           <div class="header__wrapper">
             <button class="header__nav-toggle"><span></span>
@@ -46,7 +46,7 @@
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
               </svg><span>+7 777 123 45 67</span></a>
-            </div><a class="header__consultation atchor" href="#">	консультация маркетолога</a>
+            </div><a class="header__consultation animate-scroll" href="#">	консультация маркетолога</a>
             <div class="header__digital">Digital-агентство MarketingHouse
             </div>
           </div>
@@ -119,7 +119,7 @@
         </div>
       </section>
       <!-- start problem-->
-      <section class="problem">
+      <section class="problem" id="problem">
         <div class="container">
           <h2 class="problem__title">Проблемы<span class="accent">  в вашем бизнесе</span>, которые решаем
           </h2>
@@ -307,7 +307,7 @@
         </div>
       </section>
       <!-- end former-->
-      <section class="member member--one">
+      <section class="member member--one" id="projects">
         <div class="container">
           <div class="member__wrapper">
             <div class="member__title-wrapper">
@@ -573,7 +573,7 @@
           </div>
         </div>
       </section>
-      <section class="member member--two">
+      <section class="member member--two" id="tools">
         <div class="container">
           <div class="member__wrapper">
             <div class="member__title-wrapper">
@@ -665,7 +665,7 @@
         </div>
       </section>
       <!-- end tools-->
-      <section class="member member--three">
+      <section class="member member--three" id="suggestion">
         <div class="container">
           <div class="member__title-wrapper">
             <h2 class="member__title"> Хотите получить<br><span class="accent"> индивидуальное предложение</span>    под ваш проект?
@@ -690,7 +690,7 @@
             </div>
             <div class="member__right-col"><img class="member__decor-img" src="img/members/rdb.png" width="227" alt="" role="presentation"/>
               <p class="member__offer"> Пройдите простой тест и мы подготовим стратегию под конкретно ваш случай и пришлём pdf  "Построение RDB модели для эффективной рекламы"
-              </p><a class="member__start-test btn" href="#"><span>НАЧАТЬ ТЕСТ</span><img class="adobe-icon" src="img/adobe.png"/></a>
+              </p><a class="member__start-test btn popup-with-zoom-anim" href="#quiz"><span>НАЧАТЬ ТЕСТ</span><img class="adobe-icon" src="img/adobe.png"/></a>
             </div>
           </div>
         </div>
@@ -756,10 +756,21 @@
         </div>
       </footer>
       <!-- end footer-->
+      <!-- start quiz-->
+      <div class="quiz" id="quiz">
+        <div class="quiz__wrapper">
+          <div class="quiz__progress">
+            <div class="quiz__question">Вопрос<span class="quiz__step">   1</span>   из<span class="quiz__all-step">  5</span>
+            </div>
+            <div class="quiz__progress-line">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--+footer()-->
-    <!--+modal()-->
-    <!--script(src="libs/slick/slick.js")-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/Magnific-Popup.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

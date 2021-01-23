@@ -1,6 +1,6 @@
 mixin header()
 	// start header
-	+b.HEADER.header
+	+b.HEADER.header#top
 		.container
 			+e.wrapper
 				+e.BUTTON.nav-toggle
@@ -11,7 +11,7 @@ mixin header()
 					+e.A.callback-link(href='tel:+77771234567')
 						+icon('phone')
 						span +7 777 123 45 67
-				+e.A.consultation.atchor(href='#') 	консультация маркетолога
+				+e.A.consultation.animate-scroll(href='#') 	консультация маркетолога
 				+e.digital Digital-агентство MarketingHouse
 
 

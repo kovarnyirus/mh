@@ -1,0 +1,19 @@
+mixin quiz()
+	// start quiz
+	+b.quiz#quiz
+		+e.wrapper
+			+e.progress
+				+e.question Вопрос
+					+e.SPAN.step    1
+					|    из
+					+e.SPAN.all-step   5
+				+e.progress-line
+
+mixin quiz-step-one()
+	+e.quiz-step--one
+		h2 Каким видом бизнеса занимаетесь?
+		+e.
+
+
+
+	// end quiz

@@ -1,5 +1,5 @@
 mixin member-1()
-	+b.SECTION.member--one
+	+b.SECTION.member--one#projects
 		.container
 			+e.wrapper
 				+e.title-wrapper
@@ -16,7 +16,7 @@ mixin member-1()
 
 
 mixin member-2()
-	+b.SECTION.member--two
+	+b.SECTION.member--two#tools
 		.container
 			+e.wrapper
 				+e.title-wrapper
@@ -32,7 +32,7 @@ mixin member-2()
 						+e.post Руководитель отдела продаж
 
 mixin member-3()
-	+b.SECTION.member--three
+	+b.SECTION.member--three#suggestion
 		.container
 			+e.title-wrapper
 				+e.H2.title  Хотите получить<br>
@@ -49,6 +49,6 @@ mixin member-3()
 				+e.right-col
 					+e.IMG.decor-img(src='img/members/rdb.png' width='227')
 					+e.P.offer  Пройдите простой тест и мы подготовим стратегию под конкретно ваш случай и пришлём pdf  "Построение RDB модели для эффективной рекламы"
-					+e.A.start-test.btn(href='#')
+					+e.A.start-test.btn.popup-with-zoom-anim(href='#quiz')
 						span НАЧАТЬ ТЕСТ
 						img.adobe-icon(src='img/adobe.png')
