@@ -1,5 +1,5 @@
-mixin tools-item(className, img, title, description)
-	+e.item(class= className)
+mixin tools-item(className, img, title, description, animation)
+	+e.item.animate(class= className data-animation= animation)
 		+e.img-wrapper
 			+e.img(src='img/tools/' + img alt='img')
 		+e.H3.item-title= title
@@ -12,18 +12,18 @@ mixin tools()
 		.container
 			+e.list
 				+e.item--zero
-				+e.item--one
+				+e.item--one.animate(data-animation="fadeInRight")
 					+e.img-wrapper
 						+e.img(src='img/tools/yandex.png' alt='img' width='117' )
 						+e.img(src='img/tools/google.png' alt='img' width='118')
 					+e.H3.item-title Контекстная реклама в Яндекс.Директ и Google.Ads
 					+e.P.item-description Клиенты в ваш бизнес из поисковых и медийный сетей, которые интересуются вашими товарами/услугами.
 					+e.A.item-link.btn(href="#") Получить подробную презентацию в WhatsApp
-				+tools-item('tools__item--two', 'landing.png', 'Разработка Landing Page', 'Сайт, который продаёт за вас')
-				+tools-item('tools__item--three', 'target.svg', 'Таргетированная реклама Instagram/Facebook/Вконтакте', 'Поток целевых клиентов из социальным сетей под ключ')
-				+tools-item('tools__item--four', 'quiz.svg', 'Quiz-маркетинг в WhatsApp', 'Целевой лид от 30 руб в любую нишу')
-				+tools-item('tools__item--five', 'quiz-2.png', 'Quiz-маркетинг', 'Привлечём, сегментируем, продадим')
-				+tools-item('tools__item--six', 'quiz-vk.png', 'Автоворонка в Вконтакте', 'Генерация базы горячих клиeнтов, которая будет постоянно покупать')
-				+tools-item('tools__item--seven', 'soc.svg', 'Введение соц сетей Вконтакте, Instagram', 'Привлечём, сегментируем, продадим')
+				+tools-item('tools__item--two', 'landing.png', 'Разработка Landing Page', 'Сайт, который продаёт за вас', 'fadeInLeft')
+				+tools-item('tools__item--three', 'target.svg', 'Таргетированная реклама Instagram/Facebook/Вконтакте', 'Поток целевых клиентов из социальным сетей под ключ', 'fadeInRight')
+				+tools-item('tools__item--four', 'quiz.svg', 'Quiz-маркетинг в WhatsApp', 'Целевой лид от 30 руб в любую нишу', 'fadeInLeft')
+				+tools-item('tools__item--five', 'quiz-2.png', 'Quiz-маркетинг', 'Привлечём, сегментируем, продадим', 'fadeInRight')
+				+tools-item('tools__item--six', 'quiz-vk.png', 'Автоворонка в Вконтакте', 'Генерация базы горячих клиeнтов, которая будет постоянно покупать', 'fadeInLeft')
+				+tools-item('tools__item--seven', 'soc.svg', 'Введение соц сетей Вконтакте, Instagram', 'Привлечём, сегментируем, продадим', 'fadeInRight')
 
 	// end tools

@@ -1,6 +1,6 @@
 mixin write-wrapper(params)
 	// start write
-	+b.SECTION.write(class= params.classBlock)
+	+b.SECTION.write.animate(class= params.classBlock data-animation="fadeInLeft")
 		.container
 			+e.wrapper
 				+e.top-wrapper
@@ -13,7 +13,7 @@ mixin write-wrapper(params)
 					block
 					+e.agreement Нажимая на кнопку, вы даете согласие на обработку персональных данных
 
-mixin write-1(className)
+mixin write-1(className )
 	- var params = {title: 'Запишитесь на <span class="accent">  индивидуальный разбор,  </span>  чтобы увеличить продажи в вашем бизнесе', img: 'form-decor-1.svg', classBlock: className }
 	+write-wrapper(params)
 		label.label

@@ -1,18 +1,66 @@
+mixin radioBtn(name, value, checked)
+	+b.LABEL.radio
+		+e.INPUT.input(type='radio' name= name id= value value= value  checked= checked)= value
+		+e.label= value
+
 mixin quiz()
 	// start quiz
-	+b.quiz#quiz
+	+b.FORM.quiz#quiz.mfp-hide
 		+e.wrapper
-			+e.progress
-				+e.question Вопрос
-					+e.SPAN.step    1
+			+e.progress-wrapper
+				+e.progress-question Вопрос
+					+e.SPAN.progress-step    1
 					|    из
-					+e.SPAN.all-step   5
+					+e.SPAN.progress-all   5
 				+e.progress-line
+			+e.step--one.quiz__step--active
+				+e.H3.title Каким видом бизнеса занимаетесь?
+				+e.answers
+					+radioBtn('typeOfBusiness','Оптовик','checked')
+					+radioBtn('typeOfBusiness','Онлайн-школа')
+					+radioBtn('typeOfBusiness','Розница')
+					+radioBtn('typeOfBusiness','Сфера услуг')
+					+radioBtn('typeOfBusiness','Производство')
+			+e.step--two
+				+e.H3.title Какую проблему на данный момент хотите решить?
+				+e.answers
+					+radioBtn('problem','Увеличить количество целевых заявок','checked')
+					+radioBtn('problem','Масштабироваться с помощью новых инструментов рекламы')
+					+radioBtn('problem','Увеличить конверсию в продажу')
+					+radioBtn('problem','Начать использовать рекламу в интернете')
+			+e.step--three
+				+e.H3.title Запускали рекламу в интернете?
+				+e.answers
+					+radioBtn('runAds','Сам настраивал','checked')
+					+radioBtn('runAds','Нанимал подрядчиков')
+					+radioBtn('runAds','Не запускал')
+			+e.step--four
+				+e.H3.title Есть сайт вашего бизнеса?
+				+e.answers
+					+radioBtn('site','Да','checked')
+					+radioBtn('site','Нет')
+					+radioBtn('site','Нужен сайт')
+			+e.step--five
+				+e.H3.title Ведёте социальные сети для бизнеса?
+				+e.answers
+					+radioBtn('soc','Да','checked')
+					+radioBtn('soc','Нет')
+					+radioBtn('soc','Думаю начать')
+			+e.step--six
+				+e.H3.title Чтобы маркетолог подготовил индивидуальное предложение под ваш проект заполните форму
+				+e.subtitle
+					span.accent Бонус:
+					|   на ваш WhatsApp придёт pdf «Построение RDB-модели для эффективной рекламы»
+				+e.answers
+					+radioBtn('soc','Да','checked')
+					+radioBtn('soc','Нет')
+					+radioBtn('soc','Думаю начать')
+			+e.BUTTON.btn-close()
+				+icon('arrow-left')
+				span Назад
 
-mixin quiz-step-one()
-	+e.quiz-step--one
-		h2 Каким видом бизнеса занимаетесь?
-		+e.
+
+
 
 
 
