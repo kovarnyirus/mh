@@ -760,16 +760,18 @@
       <form class="quiz mfp-hide" id="quiz">
         <div class="quiz__wrapper">
           <div class="quiz__progress-wrapper">
-            <div class="quiz__progress-question">Вопрос<span class="quiz__progress-step">   1</span>   из<span class="quiz__progress-all">  5</span>
+            <div class="quiz__progress-question">Вопрос&nbsp<span class="quiz__progress-step">   1</span><span class="quiz__progress-all">  из   5</span>
             </div>
             <div class="quiz__progress-line">
+              <div class="quiz__progress-line-done" style="width: 5%">
+              </div>
             </div>
           </div>
           <div class="quiz__step quiz__step--one quiz__step quiz__step--active">
             <h3 class="quiz__title">Каким видом бизнеса занимаетесь?
             </h3>
             <div class="quiz__answers">
-              <label class="radio"><input class="radio__input" type="radio" name="typeOfBusiness" id="Оптовик" value="Оптовик" checked="checked"/><span class="radio__label">Оптовик</span>
+              <label class="radio"><input class="radio__input" type="radio" name="typeOfBusiness" id="Оптовик" value="Оптовик"/><span class="radio__label">Оптовик</span>
               </label>
               <label class="radio"><input class="radio__input" type="radio" name="typeOfBusiness" id="Онлайн-школа" value="Онлайн-школа"/><span class="radio__label">Онлайн-школа</span>
               </label>
@@ -785,7 +787,7 @@
             <h3 class="quiz__title">Какую проблему на данный момент хотите решить?
             </h3>
             <div class="quiz__answers">
-              <label class="radio"><input class="radio__input" type="radio" name="problem" id="Увеличить количество целевых заявок" value="Увеличить количество целевых заявок" checked="checked"/><span class="radio__label">Увеличить количество целевых заявок</span>
+              <label class="radio"><input class="radio__input" type="radio" name="problem" id="Увеличить количество целевых заявок" value="Увеличить количество целевых заявок"/><span class="radio__label">Увеличить количество целевых заявок</span>
               </label>
               <label class="radio"><input class="radio__input" type="radio" name="problem" id="Масштабироваться с помощью новых инструментов рекламы" value="Масштабироваться с помощью новых инструментов рекламы"/><span class="radio__label">Масштабироваться с помощью новых инструментов рекламы</span>
               </label>
@@ -799,7 +801,7 @@
             <h3 class="quiz__title">Запускали рекламу в интернете?
             </h3>
             <div class="quiz__answers">
-              <label class="radio"><input class="radio__input" type="radio" name="runAds" id="Сам настраивал" value="Сам настраивал" checked="checked"/><span class="radio__label">Сам настраивал</span>
+              <label class="radio"><input class="radio__input" type="radio" name="runAds" id="Сам настраивал" value="Сам настраивал"/><span class="radio__label">Сам настраивал</span>
               </label>
               <label class="radio"><input class="radio__input" type="radio" name="runAds" id="Нанимал подрядчиков" value="Нанимал подрядчиков"/><span class="radio__label">Нанимал подрядчиков</span>
               </label>
@@ -811,7 +813,7 @@
             <h3 class="quiz__title">Есть сайт вашего бизнеса?
             </h3>
             <div class="quiz__answers">
-              <label class="radio"><input class="radio__input" type="radio" name="site" id="Да" value="Да" checked="checked"/><span class="radio__label">Да</span>
+              <label class="radio"><input class="radio__input" type="radio" name="site" id="Да" value="Да"/><span class="radio__label">Да</span>
               </label>
               <label class="radio"><input class="radio__input" type="radio" name="site" id="Нет" value="Нет"/><span class="radio__label">Нет</span>
               </label>
@@ -823,7 +825,7 @@
             <h3 class="quiz__title">Ведёте социальные сети для бизнеса?
             </h3>
             <div class="quiz__answers">
-              <label class="radio"><input class="radio__input" type="radio" name="soc" id="Да" value="Да" checked="checked"/><span class="radio__label">Да</span>
+              <label class="radio"><input class="radio__input" type="radio" name="soc" id="Да" value="Да"/><span class="radio__label">Да</span>
               </label>
               <label class="radio"><input class="radio__input" type="radio" name="soc" id="Нет" value="Нет"/><span class="radio__label">Нет</span>
               </label>
@@ -836,16 +838,18 @@
             </h3>
             <div class="quiz__subtitle"><span class="accent">Бонус:</span>  на ваш WhatsApp придёт pdf «Построение RDB-модели для эффективной рекламы»
             </div>
-            <div class="quiz__answers">
-              <label class="radio"><input class="radio__input" type="radio" name="soc" id="Да" value="Да" checked="checked"/><span class="radio__label">Да</span>
+            <div class="quiz__answers quiz__answers--form">
+              <label class="label">
+                <input class="input input--phone" type="text" placeholder="Введите номер телефона"/>
               </label>
-              <label class="radio"><input class="radio__input" type="radio" name="soc" id="Нет" value="Нет"/><span class="radio__label">Нет</span>
+              <label class="label">
+                <input class="input" type="text" placeholder="Введите имя"/>
               </label>
-              <label class="radio"><input class="radio__input" type="radio" name="soc" id="Думаю начать" value="Думаю начать"/><span class="radio__label">Думаю начать</span>
-              </label>
+              <button class="send btn btn-send">Получить предложение</button>
+              <div class="agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
             </div>
           </div>
-          <button class="quiz__btn-close">
+          <button class="quiz__btn-close" disabled="disabled">
             <svg class="icon icon-arrow-left ">
               <use xlink:href="img/icons/sprite.svg#arrow-left"></use>
             </svg><span>Назад</span>

@@ -34,28 +34,89 @@ $(document).ready(function () {
         mainClass: 'my-mfp-zoom-in'
     });
 
-    $('.quiz__btn-close').on('click', function (e) {
+
+    let quizProgressStep = $('.quiz__progress-step')
+    let quizProgressAll = $('.quiz__progress-all')
+    let btn = $('.quiz__btn-close');
+    let quizProgressLineDone = $('.quiz__progress-line-done');
+
+    function quizPrevStep(e){
         e.preventDefault();
+        let stepActive = $('.quiz__step--active');
+        if (stepActive.hasClass("quiz__step--two")) {
+            stepActive.removeClass('quiz__step--active');
+            btn.attr('disabled',true)
+            $('.quiz__step--one').addClass('quiz__step--active');
+            quizProgressStep.text('1')
+            quizProgressLineDone.width('5%')
+        } else if (stepActive.hasClass("quiz__step--three")) {
+            $('.quiz__step--three').addClass('quiz__step--active');
+            stepActive.removeClass('quiz__step--active');
+            $('.quiz__step--two').addClass('quiz__step--active');
+            quizProgressStep.text('2')
+            quizProgressLineDone.width('20%')
+        } else if (stepActive.hasClass("quiz__step--four")) {
+            stepActive.removeClass('quiz__step--active');
+            $('.quiz__step--three').addClass('quiz__step--active');
+            quizProgressStep.text('3')
+            quizProgressLineDone.width('40%')
+        } else if (stepActive.hasClass("quiz__step--five")) {
+            stepActive.removeClass('quiz__step--active');
+            $('.quiz__step--four').addClass('quiz__step--active');
+            quizProgressStep.text('4')
+            quizProgressLineDone.width('60%')
+            // $('.quiz__btn').text('Отправить');
+        } else if (stepActive.hasClass("quiz__step--six")) {
+            stepActive.removeClass('quiz__step--active');
+            $('.quiz__step--five').addClass('quiz__step--active');
+            quizProgressStep.text('5')
+            quizProgressAll.show()
+            quizProgressLineDone.width('80%')
+            // $('#popup-quiz form').submit()
+        }
+    }
+
+    function quizNextStep(e){
         let stepActive = $('.quiz__step--active');
         if (stepActive.hasClass("quiz__step--one")) {
             stepActive.removeClass('quiz__step--active');
             $('.quiz__step--two').addClass('quiz__step--active');
+            btn.attr('disabled',false)
+            quizProgressStep.text('2')
+            quizProgressLineDone.width('20%')
         } else if (stepActive.hasClass("quiz__step--two")) {
             stepActive.removeClass('quiz__step--active');
             $('.quiz__step--three').addClass('quiz__step--active');
+            quizProgressStep.text('3')
+            quizProgressLineDone.width('40%')
         } else if (stepActive.hasClass("quiz__step--three")) {
             stepActive.removeClass('quiz__step--active');
             $('.quiz__step--four').addClass('quiz__step--active');
+            quizProgressStep.text('4')
+            quizProgressLineDone.width('60%')
         } else if (stepActive.hasClass("quiz__step--four")) {
             stepActive.removeClass('quiz__step--active');
             $('.quiz__step--five').addClass('quiz__step--active');
+            quizProgressStep.text('5')
+            quizProgressLineDone.width('80%')
         } else if (stepActive.hasClass("quiz__step--five")) {
             stepActive.removeClass('quiz__step--active');
             $('.quiz__step--six').addClass('quiz__step--active');
-            $('.quiz__btn').text('Отправить');
+            quizProgressStep.text('Спасибо, что ответили на вопросы')
+            quizProgressAll.hide()
+            quizProgressLineDone.width('100%')
+            // $('.quiz__btn').text('Отправить');
         } else if (stepActive.hasClass("quiz__step--six")) {
-            $('#popup-quiz form').submit()
+            // $('#popup-quiz form').submit()
         }
+    }
+
+    $('.quiz__step').on('change', function (e) {
+        quizNextStep(e)
+    });
+
+    $('.quiz__btn-close').on('click', function (e) {
+        quizPrevStep(e)
     });
 
 
