@@ -6,7 +6,6 @@ doctype html
 html(lang="ru")
     head
         meta(charset="utf-8")
-
         block title
             title title
         meta(name="description", content="mh")
@@ -14,16 +13,14 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(property='og:image', content='path/to/image.jpg')
         link(rel='shortcut icon',   type="image/png",  href='img/favicon/favicon.ico')
-
-        // Custom Browsers Color
         meta(name='theme-color', content='#b9a783')
         link(rel="stylesheet", type="text/css", href="css/style.min.css")
+        script(src="js/jQuery.js" defer)
+        script(src="js/jquery.inputmask.min.js" defer)
+        script(src="js/Magnific-Popup.js" defer)
+        script(src="js/main.js" defer)
 
     body.page-body
         .main-wrapper
             block pagecontent
                 h3 content
-        script(src="js/jQuery.js")
-        script(src="js/jquery.inputmask.min.js")
-        script(src="js/Magnific-Popup.js")
-        script(src="js/main.js")
