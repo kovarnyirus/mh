@@ -3,7 +3,7 @@ mixin item(number, text, btnText)
 		+e.SPAN.number= number
 		+e.content-wrapper
 			+e.P.text= text
-			+e.A.btn.btn(href="#")= btnText
+			+e.btn.btn= btnText
 mixin  former()
 	// start former
 	+b.SECTION.former

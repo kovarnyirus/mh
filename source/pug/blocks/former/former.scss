@@ -50,8 +50,9 @@
     line-height: 15px;
     text-transform: uppercase;
     transition: .2s;
-    &:hover {
-      background: #CC4555;;
+    &:hover,
+    &:active{
+      background-color: $accent;
     }
   }
 
