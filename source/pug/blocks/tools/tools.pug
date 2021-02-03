@@ -1,10 +1,10 @@
 mixin tools-item(className, img, title, description, animation)
-	+e.item.animate(class= className data-animation= animation)
+	+e.item(class= className)
 		+e.img-wrapper
 			+e.img(src='img/tools/' + img alt='img')
 		+e.H3.item-title= title
 		+e.P.item-description= description
-		+e.A.item-link.btn(href="#") Получить подробную презентацию в WhatsApp
+		+e.A.item-link.btn(href="https://api.whatsapp.com/send?phone=79111649441&text=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8E%20%D0%BD%D0%B0%D0%B6%D0%BC%D0%B8%D1%82%D0%B5%20%22%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%22") Получить подробную презентацию в WhatsApp
 
 mixin tools()
 	// start tools
@@ -12,7 +12,7 @@ mixin tools()
 		.container
 			+e.list
 				+e.item--zero
-				+e.item--one.animate(data-animation="fadeInRight")
+				+e.item--one
 					+e.img-wrapper
 						+e.img(src='img/tools/yandex.png' alt='img' width='117' )
 						+e.img(src='img/tools/google.png' alt='img' width='118')
