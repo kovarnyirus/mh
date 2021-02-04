@@ -119,6 +119,10 @@ $(document).ready(function () {
         quizPrevStep(e)
     });
 
+    $('.custom-select').select2({
+        minimumResultsForSearch: -1,
+    })
+
 
     // анимация при сколле
     function animations() {

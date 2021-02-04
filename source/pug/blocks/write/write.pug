@@ -23,8 +23,11 @@ mixin write-1(className )
 mixin write-2(className)
 	- var params = {title: 'Укажите с какой проблемой вы столкнулись в вашем бизнесе и <span class="accent">  получите список готовых решений  </span> в виде PDF-файлов.', subtitle: 'PDF отправим в Ваш WhatsApp', img: 'form-decor-2.svg', classBlock: className}
 	+write-wrapper(params)
-		select.select
-			option Выпадающий список
+		select.select.custom-select
+			option Мало лидов
+			option Низкая конверсия в продажу
+			option Низкий процент повторных продаж
+			option Не понимаю как масштабироваться
 		label.label
 			input.input.input--phone(type='text' placeholder='Номер телефона WhatsApp')
 		+e.BUTTON.send.btn.btn-send записаться на разбор

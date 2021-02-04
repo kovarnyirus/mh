@@ -13,6 +13,7 @@
     <script src="js/jquery.js" defer></script>
     <script src="js/jquery.inputmask.min.js" defer></script>
     <script src="js/magnific-popup.js" defer></script>
+    <script src="js/select2.min.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body class="page-body">
@@ -49,7 +50,7 @@
               <svg class="icon icon-phone ">
                 <use xlink:href="img/icons/sprite.svg#phone"></use>
               </svg><span> +7 911 164 94 41</span></a>
-            </div><a class="header__consultation animate-scroll" href="#">	консультация маркетолога</a>
+            </div><a class="header__consultation popup-with-zoom-anim" href="#callback-popup">	консультация маркетолога</a>
             <div class="header__digital">Digital-агентство MarketingHouse
             </div>
           </div>
@@ -260,8 +261,11 @@
             <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-2.svg" alt="" role="presentation"/>
             </div>
             <form class="write__form-wrapper">
-              <select class="select">
-                <option>Выпадающий список</option>
+              <select class="select custom-select">
+                <option>Мало лидов</option>
+                <option>Низкая конверсия в продажу</option>
+                <option>Низкий процент повторных продаж</option>
+                <option>Не понимаю как масштабироваться</option>
               </select>
               <label class="label">
                 <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
@@ -762,7 +766,7 @@
             </p><a class="footer__callback-link" href="tel:+77771234567">
             <svg class="icon icon-phone ">
               <use xlink:href="img/icons/sprite.svg#phone"></use>
-            </svg>+7 777 123 45 67</a><a class="footer__consultation-link" href="#">консультация маркетолога</a>
+            </svg>+7 777 123 45 67</a><a class="footer__consultation-link popup-with-zoom-anim" href="#callback-popup">консультация маркетолога</a>
           </div>
         </div>
       </footer>
@@ -868,6 +872,24 @@
         </div>
       </form>
       <!-- end quiz-->
+      <div class="popup mfp-hide" id="callback-popup">
+        <div class="popup__wrapper">
+          <h2 class="popup__title">Заполните форму и мы вам перезвоним через 6 мин
+          </h2>
+          <form class="popup__form">
+            <label class="label">
+              <input class="input" type="text" placeholder="Имя"/>
+            </label>
+            <label class="label">
+              <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+            </label>
+            <button class="popup__send btn btn-send">записаться на разбор
+            </button>
+            <div class="popup__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

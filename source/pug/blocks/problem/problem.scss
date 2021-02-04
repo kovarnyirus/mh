@@ -1,7 +1,7 @@
 .problem {
   &__title {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 63px;
   }
 
@@ -33,6 +33,7 @@
     &--four {
       .problem__img {
         margin-bottom: 30px;
+        width: 100%;
       }
     }
   }

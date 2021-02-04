@@ -1,0 +1,40 @@
+.popup {
+  max-width: 450px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px;
+  color: #333333;
+  border-radius: 5px;
+  position: relative;
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333333;
+    font-weight: 900;
+  }
+
+  &__send {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__agreement {
+    color: #797979;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  @include media-breakpoint-up(lg){
+    &__title{
+      font-size: 23px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+mixin popups()
+	+b.popup.mfp-hide#callback-popup
+		+e.wrapper
+			+e.H2.title Заполните форму и мы вам перезвоним через 6 мин
+			+e.FORM.form
+				label.label
+					input.input(type='text' placeholder='Имя')
+				label.label
+					input.input.input--phone(type='text' placeholder='Номер телефона WhatsApp')
+				+e.BUTTON.send.btn.btn-send записаться на разбор
+				+e.agreement Нажимая на кнопку, вы даете согласие на обработку персональных данных
