@@ -4,6 +4,7 @@ $(document).ready(function () {
     function animateScroll(positionToScroll, delay) {
         $('html, body').animate({scrollTop: positionToScroll}, delay);
     }
+
     $(".animate-scroll").click(function (e) {
         e.preventDefault();
         let elementClick = $(this).attr("href");
@@ -13,7 +14,7 @@ $(document).ready(function () {
             let destination = $(elementClick).offset().top;
             let mainNav = $(".main-nav");
             animateScroll(destination, 600);
-            if (mainNav.hasClass('main-nav--open')){
+            if (mainNav.hasClass('main-nav--open')) {
                 mainNav.toggleClass('main-nav--open')
             }
         }
@@ -40,12 +41,12 @@ $(document).ready(function () {
     let btn = $('.quiz__btn-close');
     let quizProgressLineDone = $('.quiz__progress-line-done');
 
-    function quizPrevStep(e){
+    function quizPrevStep(e) {
         e.preventDefault();
         let stepActive = $('.quiz__step--active');
         if (stepActive.hasClass("quiz__step--two")) {
             stepActive.removeClass('quiz__step--active');
-            btn.attr('disabled',true)
+            btn.attr('disabled', true)
             $('.quiz__step--one').addClass('quiz__step--active');
             quizProgressStep.text('1')
             quizProgressLineDone.width('5%')
@@ -76,12 +77,12 @@ $(document).ready(function () {
         }
     }
 
-    function quizNextStep(e){
+    function quizNextStep(e) {
         let stepActive = $('.quiz__step--active');
         if (stepActive.hasClass("quiz__step--one")) {
             stepActive.removeClass('quiz__step--active');
             $('.quiz__step--two').addClass('quiz__step--active');
-            btn.attr('disabled',false)
+            btn.attr('disabled', false)
             quizProgressStep.text('2')
             quizProgressLineDone.width('20%')
         } else if (stepActive.hasClass("quiz__step--two")) {
@@ -147,13 +148,32 @@ $(document).ready(function () {
     // триггер скрола, для появления анимации  если она вверху страницы, не дожидаясь скролла пользователя
     $(window).scroll()
 
+    var swiper = new Swiper('.swiper-container', {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            768: {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            }
+        }
+    });
+
 })
 let headerNavToggle = document.querySelector('.header__nav-toggle')
 let mainNavToggle = document.querySelector('.main-nav__close')
-let mainNav= document.querySelector('.main-nav')
+let mainNav = document.querySelector('.main-nav')
 
-function navToggle (){
+function navToggle() {
     mainNav.classList.toggle('main-nav--open')
 }
-headerNavToggle.addEventListener('click',navToggle)
-mainNavToggle.addEventListener('click',navToggle)
+
+headerNavToggle.addEventListener('click', navToggle)
+mainNavToggle.addEventListener('click', navToggle)

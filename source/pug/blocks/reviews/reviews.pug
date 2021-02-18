@@ -1,0 +1,29 @@
+mixin reviews-slide(name, userPost, img)
+	.swiper-slide
+		+e.slide
+			+e.H3.name=  name
+			+e.H5.post= userPost
+			+e.img-wrapper
+				+e.IMG.img(src='img/reviews/' + img + '.jpg' alt='img')
+mixin reviews()
+	// start reviews
+	+b.SECTION.reviews
+		.container
+			+e.H2.title Отзывы
+			+e.slider
+				.swiper-container
+					.swiper-button-prev
+					.swiper-button-next
+					.swiper-pagination
+					.swiper-wrapper
+						+reviews-slide('Меринова Адель', 'Директор выставки "Робосфера"', 'robosfera')
+						+reviews-slide('Лукоянова Татьяна', 'РОМ компании "Wecheap"', 'wp')
+						+reviews-slide('Шайхутдинов Тимур Маратович', 'Цветочная мастерская "Дари"', 'dari')
+						.swiper-slide
+							+e.slide
+								+e.H3.name Харисов Марсель
+								+e.H5.post Руководитель бойцовского клуба "Octa Gym"
+								+e.video-wrapper
+									<iframe src="https://www.youtube.com/embed/QLbLUn58WyU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	// end reviews
