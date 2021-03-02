@@ -31,8 +31,8 @@ mixin member-2()
 						+e.name Александр Тышкевич
 						+e.post Руководитель отдела продаж
 
-mixin member-3()
-	+b.SECTION.member--three#suggestion
+mixin member-3(id)
+	+b.SECTION.member--three(id= id)
 		.container
 			+e.title-wrapper
 				+e.H2.title  Хотите получить<br>

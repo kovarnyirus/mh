@@ -35,6 +35,14 @@ $(document).ready(function () {
         mainClass: 'my-mfp-zoom-in'
     });
 
+    function showPopup() {
+        $.magnificPopup.open({
+            items: { src: '.popup--suggestion' },
+            type: 'inline'
+        }, 0);
+    }
+
+    setTimeout(showPopup, 45000)
 
     let quizProgressStep = $('.quiz__progress-step')
     let quizProgressAll = $('.quiz__progress-all')

@@ -95,14 +95,14 @@
             </h2>
             <h2 class="stock-row__old-cost">3 000 ₽
             </h2>
-            <h2 class="stock-row__new-cost">900 ₽
+            <h2 class="stock-row__new-cost">0 ₽
             </h2>
           </div>
         </div>
       </section>
       <!-- end stock-row-->
       <!-- start write-->
-      <section class="write">
+      <section class="write write write--one">
         <div class="container">
           <div class="write__wrapper">
             <div class="write__top-wrapper">
@@ -111,9 +111,9 @@
             </div>
             <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-1.svg" alt="" role="presentation"/>
             </div>
-            <form class="write__form-wrapper">
+            <form class="write__form-wrapper" action="send2.php" method="post">
               <label class="label">
-                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp" name="phone"/>
               </label>
               <button class="write__send btn btn-send">записаться на разбор
               </button>
@@ -250,7 +250,7 @@
       </section>
       <!-- end problem-->
       <!-- start write-->
-      <section class="write">
+      <section class="write write write--two">
         <div class="container">
           <div class="write__wrapper">
             <div class="write__top-wrapper">
@@ -261,15 +261,15 @@
             </div>
             <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-2.svg" alt="" role="presentation"/>
             </div>
-            <form class="write__form-wrapper">
-              <select class="select custom-select">
+            <form class="write__form-wrapper" action="send3.php" method="post">
+              <select class="select custom-select" name="select">
                 <option>Мало лидов</option>
                 <option>Низкая конверсия в продажу</option>
                 <option>Низкий процент повторных продаж</option>
                 <option>Не понимаю как масштабироваться</option>
               </select>
               <label class="label">
-                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp" name="phone"/>
               </label>
               <button class="write__send btn btn-send">записаться на разбор
               </button>
@@ -623,7 +623,7 @@
       </section>
       <!-- end projects-->
       <!-- start write-->
-      <section class="write">
+      <section class="write write write--three">
         <div class="container">
           <div class="write__wrapper">
             <div class="write__top-wrapper">
@@ -634,9 +634,9 @@
             </div>
             <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-3.svg" alt="" role="presentation"/>
             </div>
-            <form class="write__form-wrapper">
+            <form class="write__form-wrapper" action="send6.php" method="post">
               <label class="label">
-                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+                <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp" name="phone"/>
               </label>
               <button class="write__send btn btn-send">получить кейсы
               </button>
@@ -782,7 +782,7 @@
       </section>
       <!-- end workflow-->
       <!-- start write-->
-      <section class="write">
+      <section class="write write write--four">
         <div class="container">
           <div class="write__wrapper">
             <div class="write__top-wrapper">
@@ -791,9 +791,9 @@
             </div>
             <div class="write__img-wrapper"><img class="write__img" src="img/form-decor-4.svg" alt="" role="presentation"/>
             </div>
-            <form class="write__form-wrapper">
+            <form class="write__form-wrapper" action="send5.php" method="post">
               <label class="label">
-                <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp"/>
+                <input class="input input--phone" type="text" placeholder="Введите номер телефона WhatsApp" name="phone"/>
               </label>
               <button class="write__send btn btn-send">Записаться на бесплатную консульацию
               </button>
@@ -830,7 +830,7 @@
       </footer>
       <!-- end footer-->
       <!-- start quiz-->
-      <form class="quiz mfp-hide" id="quiz">
+      <form class="quiz mfp-hide" id="quiz" action="send6.php" method="post">
         <div class="quiz__wrapper">
           <div class="quiz__progress-wrapper">
             <div class="quiz__progress-question">Вопрос&nbsp<span class="quiz__progress-step">   1</span><span class="quiz__progress-all">  из   5</span>
@@ -913,10 +913,10 @@
             </div>
             <div class="quiz__answers quiz__answers--form">
               <label class="label">
-                <input class="input input--phone" type="text" placeholder="Введите номер телефона"/>
+                <input class="input input--phone" type="text" placeholder="Введите номер телефона" name="phone"/>
               </label>
               <label class="label">
-                <input class="input" type="text" placeholder="Введите имя"/>
+                <input class="input" type="text" placeholder="Введите имя" name="name"/>
               </label>
               <button class="send btn btn-send">Получить предложение</button>
               <div class="agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
@@ -934,18 +934,52 @@
         <div class="popup__wrapper">
           <h2 class="popup__title">Заполните форму и мы вам перезвоним через 6 мин
           </h2>
-          <form class="popup__form">
+          <form class="popup__form" action="send1.php" method="post">
             <label class="label">
-              <input class="input" type="text" placeholder="Имя"/>
+              <input class="input" type="text" placeholder="Имя" name="name" required="required"/>
             </label>
             <label class="label">
-              <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp"/>
+              <input class="input input--phone" type="text" placeholder="Номер телефона WhatsApp" name="phone" required="required"/>
             </label>
             <button class="popup__send btn btn-send">записаться на разбор
             </button>
             <div class="popup__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
             </div>
           </form>
+        </div>
+      </div>
+      <div class="popup popup--suggestion mfp-hide" id="suggestion-popup">
+        <div class="popup__wrapper">
+          <section class="member member--three">
+            <div class="container">
+              <div class="member__title-wrapper">
+                <h2 class="member__title"> Хотите получить<br><span class="accent"> индивидуальное предложение</span>    под ваш проект?
+                </h2>
+              </div>
+              <div class="member__wrapper">
+                <div class="member__member-info-wrapper">
+                  <div class="member__msg-wrapper">
+                    <picture>
+                      <source media="(min-width: 960px)" srcset="img/members/varvara-decor.svg"/><img class="member__img" src="img/members/varvara-decor-mobile.svg" alt="img" title=""/>
+                    </picture>
+                  </div>
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/members/varvara.png"/><img class="member__img" src="img/members/varvara-mobile.png" alt="img" title=""/>
+                  </picture>
+                  <div class="member__member-info">
+                    <div class="member__name">Варвара Штенникова
+                    </div>
+                    <div class="member__post">Руководитель отдела управления проектами
+                    </div>
+                  </div>
+                </div>
+                <div class="member__right-col"><img class="member__decor-img" src="img/members/rdb.png" width="227" alt="" role="presentation"/>
+                  <p class="member__offer"> Пройдите простой тест и мы подготовим стратегию под конкретно ваш случай и пришлём pdf  "Построение RDB модели для эффективной рекламы"
+                  </p><a class="member__start-test btn popup-with-zoom-anim" href="#quiz"><span>НАЧАТЬ ТЕСТ</span><img class="adobe-icon" src="img/adobe.png"/></a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

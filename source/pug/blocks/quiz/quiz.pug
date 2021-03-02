@@ -5,7 +5,7 @@ mixin radioBtn(name, value, checked)
 
 mixin quiz()
 	// start quiz
-	+b.FORM.quiz#quiz.mfp-hide
+	+b.FORM.quiz#quiz.mfp-hide(action='send6.php' method="post")
 		+e.wrapper
 			+e.progress-wrapper
 				+e.progress-question Вопрос&nbsp
@@ -54,9 +54,9 @@ mixin quiz()
 					|   на ваш WhatsApp придёт pdf «Построение RDB-модели для эффективной рекламы»
 				+e.answers--form
 					label.label
-						input.input.input--phone(type='text' placeholder='Введите номер телефона')
+						input.input.input--phone(type='text' placeholder='Введите номер телефона' name='phone')
 					label.label
-						input.input(type='text' placeholder='Введите имя')
+						input.input(type='text' placeholder='Введите имя' name='name')
 					button.send.btn.btn-send Получить предложение
 					.agreement Нажимая на кнопку, вы даете согласие на обработку персональных данных
 			+e.BUTTON.btn-close(disabled)
