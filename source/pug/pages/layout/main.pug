@@ -21,6 +21,17 @@ html(lang="ru")
         script(src="js/swiper-bundle.min.js" defer)
         script(src="js/select2.min.js" defer)
         script(src="js/main.js" defer)
+        script(type='text/javascript').
+            !function () {
+                var t = document.createElement("script");
+                t.type = "text/javascript", t.async = !0, t.src = "https://vk.com/js/api/openapi.js?168", t.onload = function () {
+                    VK.Retargeting.Init("VK-RTRG-837399-aNYCT"), VK.Retargeting.Hit()
+                }, document.head.appendChild(t)
+            }();
+        noscript
+            img(src='https://vk.com/rtrg?p=VK-RTRG-837399-aNYCT' alt='')
+
+
 
     body.page-body
         .main-wrapper

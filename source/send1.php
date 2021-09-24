@@ -26,9 +26,14 @@ if (!$errors) {
     $msg .= ' </body>'."\n";
     $msg .= '</html>'."\n";
 
-    if (mail($to, $subject, $msg, $header, '-fno-reply@'.$_SERVER['HTTP_HOST'])) {
-        header('Location: ' . $thanks_file);
-    } else {
+    if(empty(trim($phone))){
+        if (mail($to, $subject, $msg, $header, '-fno-reply@'.$_SERVER['HTTP_HOST'])) {
+//            header('Location: ' . $thanks_file);
+            console_log( $phone );
+        } else {
+            $output = '<p>Произошла ошибка, пожалуйста повторите попытку позже.</p>';
+        }
+    }else{
         $output = '<p>Произошла ошибка, пожалуйста повторите попытку позже.</p>';
     }
 }
