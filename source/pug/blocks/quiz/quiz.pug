@@ -54,9 +54,9 @@ mixin quiz()
 					|   на ваш WhatsApp придёт pdf «Построение RDB-модели для эффективной рекламы»
 				+e.answers--form
 					label.label
-						input.input.input--phone(type='text' placeholder='Введите номер телефона' name='phone')
+						input.input.input--phone(type='text' placeholder='Введите номер телефона' name='phone' required)
 					label.label
-						input.input(type='text' placeholder='Введите имя' name='name')
+						input.input(type='text' placeholder='Введите имя' name='name' required)
 					button.send.btn.btn-send Получить предложение
 					.agreement Нажимая на кнопку, вы даете согласие на обработку персональных данных
 			+e.BUTTON.btn-close(disabled)

@@ -33,6 +33,12 @@ mixin projects()
 				+projectItem('projects--robots', 'robots/logo.png', 'Интерактивная выставка роботов "Робосфера"', 'Повысить посещаемость выставки', ['Запустить автоворонку в Вконтакте и WhatsApp, которая прогревает аудиторию актуальным контентом (фото, видео с выставки) и закрывает на посещение', 'Запустить рекламу на YouTube, что повысить узнаваемость выставки и сделать дополнительное касание с аудиторией'], 'robots/bg.jpg', 'robots/bg-mobile.jpg', 'Кейс "Робосфера"', '7900 проданных билетов на выставку за 1 месяц, на 52% увеличили посещаемость выставки', 'https://vk.com/@mhouseru-raspakovka-keisa-proekta-robosfera', 'fadeInBottomLeft')
 				+projectItem('projects--proSlide', 'proSlide/logo.svg', 'Обучение разработки презентаций PROSLIDES', 'Продажа платных курсов', ['Запустить продажу курсов через landing page'], 'proSlide/bg.jpg', 'proSlide/bg-mobile.jpg', 'Кейс PROSLIDES', 'Стоимость привлечения 1 лида на бесплатный урок = 35 руб. Конверсяи из бесплатного урока в покупка курса стоимость 9900 руб = 27%', 'https://vk.com/@mhouseru-keis-onlain-obuchenie-po-sozdaniu-prezentacii-v-power-point', 'fadeInBottomRight')
 				+projectItem('projects--alexHammer', 'alexHammer/logo.png', 'Строительство каркасных домов axehammer-dom.ru', 'Привлечение на экскурсию по построенным объектам и генерация лидов на готовые проекты', ['Запустить запись на экскурсию через instagram на посадочную страницу', 'Запустить трафик на WhatsApp клиента с призывом получить коммерческое предложение на готовый проект'], 'alexHammer/bg.jpg', 'alexHammer/bg-mobole.jpg', 'Кейс axehammer-dom.ru', '287 записей на экскурсию за 2 месяца, стоимость лида 190 руб. 89 Запросов коммерческих предложение в WhatsApp. Стоимость лида 97 руб.', 'https://vk.com/@mhouseru-keis-stroitelstvo-karkasnyh-domov', 'fadeInBottomLeft')
+mixin projects2()
+	+b.SECTION.projects
+		.container
+			picture
+				source(media="(min-width: 960px)" srcset='/img/banner-d.jpg' )
+				+e.IMG.img(src='/img/banner-m.jpg' alt='img')
 
 
 	// end projects

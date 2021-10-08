@@ -1,4 +1,8 @@
 .projects {
+  img[src="img/bnr-mob.png"],
+  img{
+    display: block!important;
+  }
   &__logo-wrapper {
     margin-bottom: 23px;
   }
